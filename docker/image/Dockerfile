@@ -18,7 +18,7 @@ RUN echo "en_US.UTF-8 UTF-8" > /etc/locale.gen \
 ENV LC_ALL en_US.UTF-8
 
 RUN apt-get install -y python3-pip
-RUN pip3 install numpy torch torchvision
+RUN pip3 install numpy torch torchvision tensorboard
 
 # If you use /root from the image, we need to set the proxy in .bashrc.
 # If we mount /root from the host filesystem, this is not necessary.
