@@ -129,4 +129,6 @@ dmypy.json
 .pyre/
 
 lab1/*.model
-lab1/data
+lab1/data/*
+lab1/checkpoints/*
+lab1/runs/*
