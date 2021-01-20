@@ -63,16 +63,26 @@ criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(model.parameters(), lr=0.001, momentum=0.9)
 
 def test():
-    correct = 0
-    total = 0
+    correct_test = 0
+    total_test = 0
+    correct_train = 0
+    total_train = 0
     with torch.no_grad():
         for data in testloader:
             images, labels = data[0].to(device), data[1].to(device)
             outputs = model(images)
             _, predicted = torch.max(outputs.data, 1)
-            total += labels.size(0)
-            correct += (predicted == labels).sum().item()
-    return correct / total
+            total_test += labels.size(0)
+            correct_test += (predicted == labels).sum().item()
+        
+        for data in trainloader:
+            images, labels = data[0].to(device), data[1].to(device)
+            outputs = model(images)
+            _, predicted = torch.max(outputs.data, 1)
+            total_train += labels.size(0)
+            correct_train += (predicted == labels).sum().item()
+            
+    return correct_test / total_test, correct_train / total_train 
 
 losses = []
 counter = 0
@@ -92,7 +102,8 @@ for epoch in range(300):  # loop over the dataset multiple times
         # writer.close()
         
         # print(counter)
-        # if(i == 4):
+        # if(i % 10 == 0):
+        #     print("i")
         #     raise ValueError(f"stop ka")
         # zero the parameter gradients
         optimizer.zero_grad()
@@ -108,12 +119,13 @@ for epoch in range(300):  # loop over the dataset multiple times
         writer.add_scalar('pureLoss/train', loss.item(), counter)
         counter = counter + 1
     # Test every epoch
-    test_score = test()
+    test_score, train_score = test()
     # Save
     torch.save(model.state_dict(), (f'checkpoints/alexnet-cifar-10-{epoch}-sgd-0.001.pth'))
-    print(f"Epoch:{epoch}|Loss:{running_loss} {running_loss / len_batch}|Test:{test_score}")
+    print(f"Epoch:{epoch}|Loss:{running_loss} {running_loss / len_batch}|Test:{test_score}|Train:{train_score}")
     writer.add_scalar('EpochLoss/train', running_loss / len_batch, epoch)
-    writer.add_scalar('EpochLoss/test', test_score, epoch)
+    writer.add_scalar('EpochScore/test', test_score * 100, epoch)
+    writer.add_scalar('EpochScore/train', train_score * 100, epoch)
     writer.close()
 
 
