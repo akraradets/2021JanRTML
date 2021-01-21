@@ -133,4 +133,5 @@ lab1/data/*
 lab1/checkpoints/*
 
 lab1/runs/*
-!lab1/runs/current
+!lab1/runs/attemptA
+!lab1/runs/attemptB
