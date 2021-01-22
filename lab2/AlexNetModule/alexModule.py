@@ -153,3 +153,10 @@ def train_model(model, dataloaders, criterion, optimizer, num_epochs=25, weights
 
 dataloaders = { 'train': train_dataloader, 'val': val_dataloader }
 best_model, val_acc_history, loss_acc_history = train_model(alexnet, dataloaders, criterion, optimizer, 10, 'alex_module_LRN_lr_0.001_bestsofar')
+
+import pickle
+with open("alexModule_val_acc_history.txt", "wb") as f:
+    pickle.dump(val_acc_history, f)
+
+with open("alexModule_loss_acc_history.txt", "wb") as f:
+    pickle.dump(loss_acc_history, f)

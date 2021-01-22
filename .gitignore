@@ -128,14 +128,15 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# Lab1 Ignore
 lab1/*.model
 lab1/data/*
 lab1/checkpoints/*
-
 lab1/runs/*
 !lab1/runs/attemptA
 !lab1/runs/attemptB
 
-
+# Lab2 Ignore
 lab2/data/*
 lab2/AlexNet/*.pth
+lab2/AlexNetModule/*.pth
