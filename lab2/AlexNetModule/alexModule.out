@@ -66,3 +66,10 @@ Epoch time taken:  165.27823877334595
 
 Epoch 9/9
 ----------
+train Loss: 0.3825 Acc: 0.8652
+Epoch time taken:  153.71487545967102
+val Loss: 0.6412 Acc: 0.7937
+Epoch time taken:  165.21856808662415
+
+Training complete in 27m 59s
+Best val Acc: 0.793700
