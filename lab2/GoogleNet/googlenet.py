@@ -34,35 +34,17 @@ test_dataloader = torch.utils.data.DataLoader(test_dataset,  batch_size=4, shuff
 device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
 print('Using device:', device)
 
-from myModule import AlexNetModule
-alexnet = AlexNetModule(10)
-alexnet = alexnet.to(device)
+from myModule import GoogLeNet
 
-# Make optimizer and Loss function
+model = GoogLeNet()
+model.eval()
+model = model.to(device)
 criterion = nn.CrossEntropyLoss()
-params_to_update = alexnet.parameters()
+params_to_update = model.parameters()
 optimizer = optim.SGD(params_to_update , lr=0.001, momentum=0.9)
 
+
 def train_model(model, dataloaders, criterion, optimizer, num_epochs=25, weights_name='weight_save', is_inception=False):
-    '''
-    train_model function
-
-    Train a PyTorch model for a given number of epochs.
-    
-            Parameters:
-                    model: Pytorch model
-                    dataloaders: dataset
-                    criterion: loss function
-                    optimizer: update weights function
-                    num_epochs: number of epochs
-                    weights_name: file name to save weights
-                    is_inception: The model is inception net (Google LeNet) or not
-
-            Returns:
-                    model: Best model from evaluation result
-                    val_acc_history: evaluation accuracy history
-                    loss_acc_history: loss value history
-    '''
     since = time.time()
 
     val_acc_history = []
@@ -87,29 +69,18 @@ def train_model(model, dataloaders, criterion, optimizer, num_epochs=25, weights
             running_loss = 0.0
             running_corrects = 0
 
-            # Iterate over the train/validation dataset according to which phase we're in
             for inputs, labels in dataloaders[phase]:
-                # Inputs is one batch of input images, and labels is a corresponding vector of integers
-                # labeling each image in the batch. First, we move these tensors to our target device.
                 inputs = inputs.to(device)
                 labels = labels.to(device)
-                # Zero out any parameter gradients that have previously been calculated. Parameter
-                # gradients accumulate over as many backward() passes as we let them, so they need
-                # to be zeroed out after each optimizer step.
                 optimizer.zero_grad()
-                # Instruct PyTorch to track gradients only if this is the training phase, then run the
-                # forward propagation and optionally the backward propagation step for this iteration.
                 with torch.set_grad_enabled(phase == 'train'):
-                    # The inception model is a special case during training because it has an auxiliary
-                    # output used to encourage discriminative representations in the deeper feature maps.
-                    # We need to calculate loss for both outputs. Otherwise, we have a single output to
-                    # calculate the loss on.
                     if is_inception and phase == 'train':
-                        # From https://discuss.pytorch.org/t/how-to-optimize-inception-model-with-auxiliary-classifiers/7958
-                        outputs, aux_outputs = model(inputs)
+                        # From https://discuss.pytorch.org/t how-to-optimize-inception-model-with-auxiliary-classifiers/7958
+                        outputs,aux4a,aux4d = model(inputs)
                         loss1 = criterion(outputs, labels)
-                        loss2 = criterion(aux_outputs, labels)
-                        loss = loss1 + 0.4 * loss2
+                        loss2 = criterion(aux4a, labels)
+                        loss3 = criterion(aux4d, labels)
+                        loss = loss1 + (0.3 * loss2) + (0.3 * loss3)
                     else:
                         outputs = model(inputs)
                         loss = criterion(outputs, labels)
@@ -152,11 +123,11 @@ def train_model(model, dataloaders, criterion, optimizer, num_epochs=25, weights
     return model, val_acc_history, loss_acc_history
 
 dataloaders = { 'train': train_dataloader, 'val': val_dataloader }
-best_model, val_acc_history, loss_acc_history = train_model(alexnet, dataloaders, criterion, optimizer, 50, 'alex_module_LRN_lr_0.001_bestsofar')
+best_model, val_acc_history, loss_acc_history = train_model(model, dataloaders, criterion, optimizer, 50, 'google_scratch_lr_0.001_bestsofar', is_inception=True)
 
 import pickle
-with open("alexModule_val_acc_history.txt", "wb") as f:
+with open("google_softmax_val_acc_history.txt", "wb") as f:
     pickle.dump(val_acc_history, f)
 
-with open("alexModule_loss_acc_history.txt", "wb") as f:
+with open("google_softmax_loss_acc_history.txt", "wb") as f:
     pickle.dump(loss_acc_history, f)
