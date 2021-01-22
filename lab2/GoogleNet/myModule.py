@@ -110,7 +110,7 @@ class Aux4A(nn.Module):
             nn.Dropout2d(p=0.7),
             # A linear layer with softmax loss as the classifier (predicting the same 1000 classes as the main classifier, but removed at inference time).
             nn.Linear(in_features=1024,out_features=10),
-            nn.Softmax()
+            # nn.Softmax()
         )
 
     def forward(self, x):
@@ -143,7 +143,7 @@ class Aux4D(nn.Module):
             nn.Dropout2d(p=0.7),
             # A linear layer with softmax loss as the classifier (predicting the same 1000 classes as the main classifier, but removed at inference time).
             nn.Linear(in_features=1024,out_features=10),
-            nn.Softmax()
+            # nn.Softmax()
         )
 
     def forward(self, x):
@@ -211,7 +211,7 @@ class GoogLeNet(nn.Module):
         self.fc = nn.Sequential(
             nn.Dropout(p=0.4),
             nn.Linear(in_features=1024,out_features=10),
-            nn.Softmax()
+            # nn.Softmax()
         )
 
     def forward(self, x):
@@ -240,4 +240,8 @@ class GoogLeNet(nn.Module):
         # print("out",out.shape)
         # out = out.view(out.size(0), -1)
         # out = self.linear(out)
-        return out, out_aux4a, out_aux4d
+        
+        if(self.training):
+            return out, out_aux4a, out_aux4d
+        else:
+            return out

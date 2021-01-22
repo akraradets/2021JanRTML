@@ -140,3 +140,4 @@ lab1/runs/*
 lab2/data/*
 lab2/AlexNet/*.pth
 lab2/AlexNetModule/*.pth
+lab2/GoogleNet/*.pth
