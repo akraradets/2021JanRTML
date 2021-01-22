@@ -135,3 +135,7 @@ lab1/checkpoints/*
 lab1/runs/*
 !lab1/runs/attemptA
 !lab1/runs/attemptB
+
+
+lab2/data/*
+lab2/AlexNet/*.pth
