@@ -1,0 +1,75 @@
+Files already downloaded and verified
+Files already downloaded and verified
+Using device: cuda:1
+Epoch 0/9
+----------
+train Loss: 1.9240 Acc: 0.2764
+Epoch time taken:  171.34847402572632
+val Loss: 1.5101 Acc: 0.4426
+Epoch time taken:  184.38241982460022
+
+Epoch 1/9
+----------
+train Loss: 1.3448 Acc: 0.5129
+Epoch time taken:  171.78414154052734
+val Loss: 1.1260 Acc: 0.5992
+Epoch time taken:  184.83753561973572
+
+Epoch 2/9
+----------
+train Loss: 1.0355 Acc: 0.6357
+Epoch time taken:  172.43139672279358
+val Loss: 0.8378 Acc: 0.7053
+Epoch time taken:  185.46750926971436
+
+Epoch 3/9
+----------
+train Loss: 0.8641 Acc: 0.7002
+Epoch time taken:  172.82794904708862
+val Loss: 0.8388 Acc: 0.7095
+Epoch time taken:  185.83882474899292
+
+Epoch 4/9
+----------
+train Loss: 0.7297 Acc: 0.7474
+Epoch time taken:  172.93143486976624
+val Loss: 0.7376 Acc: 0.7410
+Epoch time taken:  186.03122687339783
+
+Epoch 5/9
+----------
+train Loss: 0.6292 Acc: 0.7821
+Epoch time taken:  173.06585311889648
+val Loss: 0.6478 Acc: 0.7779
+Epoch time taken:  186.12528347969055
+
+Epoch 6/9
+----------
+train Loss: 0.5459 Acc: 0.8099
+Epoch time taken:  172.93336081504822
+val Loss: 0.6325 Acc: 0.7808
+Epoch time taken:  185.9884533882141
+
+Epoch 7/9
+----------
+train Loss: 0.4695 Acc: 0.8378
+Epoch time taken:  172.95298600196838
+val Loss: 0.5856 Acc: 0.7993
+Epoch time taken:  186.07685828208923
+
+Epoch 8/9
+----------
+train Loss: 0.4172 Acc: 0.8541
+Epoch time taken:  172.89342975616455
+val Loss: 0.6289 Acc: 0.7937
+Epoch time taken:  185.98372769355774
+
+Epoch 9/9
+----------
+train Loss: 0.3702 Acc: 0.8716
+Epoch time taken:  173.004230260849
+val Loss: 0.6770 Acc: 0.7872
+Epoch time taken:  186.02697730064392
+
+Training complete in 31m 15s
+Best val Acc: 0.799300
