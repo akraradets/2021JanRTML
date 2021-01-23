@@ -11,7 +11,9 @@ import torch.nn.functional as F
 
 preprocess = transforms.Compose([
     transforms.Resize(256),
-    transforms.CenterCrop(224),
+    # transforms.CenterCrop(224),
+    transforms.RandomCrop(224),
+    transforms.RandomHorizontalFlip(),
     transforms.ToTensor(),
     transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010))])
 
@@ -123,11 +125,11 @@ def train_model(model, dataloaders, criterion, optimizer, num_epochs=25, weights
     return model, val_acc_history, loss_acc_history
 
 dataloaders = { 'train': train_dataloader, 'val': val_dataloader }
-best_model, val_acc_history, loss_acc_history = train_model(model, dataloaders, criterion, optimizer, 50, 'google_pretrain_lr_0.001_bestsofar', is_inception=False)
+best_model, val_acc_history, loss_acc_history = train_model(model, dataloaders, criterion, optimizer, 50, 'google_pretrain_augment_lr_0.001_bestsofar', is_inception=False)
 
 import pickle
-with open("google_softmax_val_acc_history.txt", "wb") as f:
+with open("google_pretrain_augment_val_acc_history.txt", "wb") as f:
     pickle.dump(val_acc_history, f)
 
-with open("google_softmax_loss_acc_history.txt", "wb") as f:
+with open("google_pretrain_augment_loss_acc_history.txt", "wb") as f:
     pickle.dump(loss_acc_history, f)
