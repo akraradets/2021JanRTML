@@ -9,13 +9,19 @@ import os
 import copy
 import torch.nn.functional as F
 
+
 preprocess = transforms.Compose([
     transforms.Resize(256),
-    # transforms.CenterCrop(224),
-    transforms.RandomCrop(224),
-    transforms.RandomHorizontalFlip(),
+    transforms.CenterCrop(224),
     transforms.ToTensor(),
     transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010))])
+# preprocess = transforms.Compose([
+#     transforms.Resize(256),
+#     # transforms.CenterCrop(224),
+#     transforms.RandomCrop(224),
+#     transforms.RandomHorizontalFlip(),
+#     transforms.ToTensor(),
+#     transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010))])
 
 # Download CIFAR-10 and split into training, validation, and test sets
 train_dataset = torchvision.datasets.CIFAR10(root='../data', train=True, download=True, transform=preprocess)
@@ -125,11 +131,11 @@ def train_model(model, dataloaders, criterion, optimizer, num_epochs=25, weights
     return model, val_acc_history, loss_acc_history
 
 dataloaders = { 'train': train_dataloader, 'val': val_dataloader }
-best_model, val_acc_history, loss_acc_history = train_model(model, dataloaders, criterion, optimizer, 50, 'google_pretrain_augment_lr_0.001_bestsofar', is_inception=True)
+best_model, val_acc_history, loss_acc_history = train_model(model, dataloaders, criterion, optimizer, 50, 'google_pretrain_lr_0.001_bestsofar', is_inception=True)
 
 import pickle
-with open("google_pretrain_augment_val_acc_history.txt", "wb") as f:
+with open("google_pretrain_val_acc_history.txt", "wb") as f:
     pickle.dump(val_acc_history, f)
 
-with open("google_pretrain_augment_loss_acc_history.txt", "wb") as f:
+with open("google_pretrain_loss_acc_history.txt", "wb") as f:
     pickle.dump(loss_acc_history, f)

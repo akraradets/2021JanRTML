@@ -1,0 +1,8 @@
+Files already downloaded and verified
+Files already downloaded and verified
+Using device: cuda:1
+Using cache found in /root/.cache/torch/hub/pytorch_vision_v0.8.2
+/usr/local/lib/python3.6/dist-packages/torchvision/models/googlenet.py:36: UserWarning: auxiliary heads in the pretrained googlenet model are NOT pretrained, so make sure to train them
+  warnings.warn('auxiliary heads in the pretrained googlenet model are NOT pretrained, '
+Epoch 0/49
+----------
