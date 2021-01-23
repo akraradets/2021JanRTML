@@ -37,7 +37,7 @@ device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
 print('Using device:', device)
 
 
-model = torch.hub.load('pytorch/vision:v0.8.2', 'googlenet', pretrained=True)
+model = torch.hub.load('pytorch/vision:v0.8.2', 'googlenet', pretrained=True, aux_logits=True)
 model.fc = nn.Linear(in_features=1024,out_features=10,bias=True)
 model.eval()
 model = model.to(device)
@@ -125,7 +125,7 @@ def train_model(model, dataloaders, criterion, optimizer, num_epochs=25, weights
     return model, val_acc_history, loss_acc_history
 
 dataloaders = { 'train': train_dataloader, 'val': val_dataloader }
-best_model, val_acc_history, loss_acc_history = train_model(model, dataloaders, criterion, optimizer, 50, 'google_pretrain_augment_lr_0.001_bestsofar', is_inception=False)
+best_model, val_acc_history, loss_acc_history = train_model(model, dataloaders, criterion, optimizer, 50, 'google_pretrain_augment_lr_0.001_bestsofar', is_inception=True)
 
 import pickle
 with open("google_pretrain_augment_val_acc_history.txt", "wb") as f:
