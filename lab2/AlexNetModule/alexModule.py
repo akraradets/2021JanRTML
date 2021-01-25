@@ -40,6 +40,8 @@ from myModule import AlexNetModule
 alexnet = AlexNetModule(10)
 alexnet = alexnet.to(device)
 
+
+print(sum(p.numel() for p in alexnet.parameters() if p.requires_grad))
 # Make optimizer and Loss function
 criterion = nn.CrossEntropyLoss()
 params_to_update = alexnet.parameters()

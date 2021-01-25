@@ -45,7 +45,7 @@ criterion = nn.CrossEntropyLoss()
 params_to_update = model.parameters()
 optimizer = optim.SGD(params_to_update , lr=0.001, momentum=0.9)
 
-
+print(sum(p.numel() for p in model.parameters() if p.requires_grad))
 def train_model(model, dataloaders, criterion, optimizer, num_epochs=25, weights_name='weight_save', is_inception=False):
     since = time.time()
 
