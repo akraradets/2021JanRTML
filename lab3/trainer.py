@@ -1,35 +1,50 @@
 import torch
 import time
-# import os
+import os
 # from copy import copy
 from copy import deepcopy
 class trainer():
-    def __init__(self,device) -> None:
+    def __init__(self,device, criterion, optimizer) -> None:
         self.device = device
+        self.criterion = criterion
+        self.optimizer = optimizer
 
-    def train_model(self,model, dataloaders, criterion, optimizer, num_epochs=25, weights_name='weight_save', is_inception=False):
+        self._train_loss = []
+        self._train_acc = []
+        self._val_loss = []
+        self._val_acc = []
+        self._init_folder()
+
+    def _init_folder(self) -> None:
+        from datetime import datetime
+        t = datetime.now().strftime("%Y%m%d-%H%M%S")
+        _save_path = f"result-{t}"
+        if(os.path.exists(f"{_save_path}") == False):
+            os.mkdir(_save_path)
+        self._save_path = f"{_save_path}"
+
+    def save(self, weights_name):
+        import pickle
+        with open(f"{self._save_path}/{weights_name}_val_acc.txt", "wb") as f:
+            pickle.dump(self._val_acc, f)
+        with open(f"{self._save_path}/{weights_name}_val_loss.txt", "wb") as f:
+            pickle.dump(self._val_loss, f)
+        with open(f"{self._save_path}/{weights_name}_train_acc.txt", "wb") as f:
+            pickle.dump(self._train_acc, f)
+        with open(f"{self._save_path}/{weights_name}_train_loss.txt", "wb") as f:
+            pickle.dump(self._train_loss, f)
+
+
+    def train(self, model, dataloaders, num_epochs=25, weights_name='weight_save', is_inception=False):
         device = self.device
-        '''
-        train_model: train a model on a dataset
-
-                Parameters:
-                        model: Pytorch model
-                        dataloaders: dataset
-                        criterion: loss function
-                        optimizer: update weights function
-                        num_epochs: number of epochs
-                        weights_name: file name to save weights
-                        is_inception: The model is inception net (Google LeNet) or not
-
-                Returns:
-                        model: Best model from evaluation result
-                        val_acc_history: evaluation accuracy history
-                        loss_acc_history: loss value history
-        '''
+        criterion = self.criterion
+        optimizer = self.optimizer
         since = time.time()
 
-        val_acc_history = []
-        loss_acc_history = []
+        self._train_loss = []
+        self._train_acc = []
+        self._val_loss = []
+        self._val_acc = []
 
         best_model_wts = deepcopy(model.state_dict())
         best_acc = 0.0
@@ -37,7 +52,7 @@ class trainer():
         for epoch in range(num_epochs):
             epoch_start = time.time()
 
-            print('Epoch {}/{}'.format(epoch, num_epochs - 1))
+            print(f'Epoch {epoch}/{num_epochs - 1}')
             print('-' * 10)
 
             # Each epoch has a training and validation phase
@@ -100,21 +115,22 @@ class trainer():
                 print("Epoch time taken: ", elapsed_epoch)
 
                 # deep copy the model
-                if phase == 'val' and epoch_acc > best_acc:
-                    best_acc = epoch_acc
-                    best_model_wts = deepcopy(model.state_dict())
-                    torch.save(model.state_dict(), weights_name + ".pth")
                 if phase == 'val':
-                    val_acc_history.append(epoch_acc)
-                if phase == 'train':
-                    loss_acc_history.append(epoch_loss)
-
-            print()
+                    if epoch_acc > best_acc:
+                        best_acc = epoch_acc
+                        best_model_wts = deepcopy(model.state_dict())
+                        torch.save(model.state_dict(), f"{self._save_path}/{weights_name}.pth")
+                        self.save(weights_name)
+                    self._val_loss.append(epoch_loss)
+                    self._val_acc.append(epoch_acc)
+                elif phase == 'train':
+                    self._train_loss.append(epoch_loss)
+                    self._train_acc.append(epoch_acc)
 
         time_elapsed = time.time() - since
         print('Training complete in {:.0f}m {:.0f}s'.format(time_elapsed // 60, time_elapsed % 60))
         print('Best val Acc: {:4f}'.format(best_acc))
-
         # load best model weights
         model.load_state_dict(best_model_wts)
-        return model, val_acc_history, loss_acc_history
+        self.save(weights_name)
+        return model

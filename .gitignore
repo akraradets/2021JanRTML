@@ -144,5 +144,5 @@ lab2/GoogleNet/*.pth
 
 # Lab3 Ignore
 lab3/data/*
-lab3/*.pth
+lab3/result*/*.pth
 lab3/core

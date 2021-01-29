@@ -1,6 +1,7 @@
-
+import torch
 import torch.nn.functional as F
 import torch.nn as nn
+from torch.nn.modules.pooling import MaxPool1d
 
 class BasicBlock(nn.Module):
     '''
@@ -59,20 +60,42 @@ class BottleneckBlock(nn.Module):
         return out
 
 class ResNet(nn.Module):
+    _BLOCK_BASIC = 0
+    _BLOCK_BOTTLENECK = 1
     def __init__(self, block, num_blocks, num_classes=10):
+        block = self._block_loader(block)
         super().__init__()
         self.in_planes = 64
         # Initial convolution: 7×7, 64, stride 2
-        self.conv1 = nn.Conv2d(in_channels=3, out_channels=64, kernel_size=7, stride=2, padding=3, bias=False)
-        self.bn1 = nn.BatchNorm2d(64)
+        self.conv1 = nn.Sequential(
+            nn.Conv2d(in_channels=3, out_channels=64, kernel_size=7, stride=2, padding=3, bias=False),
+            nn.BatchNorm2d(64),
+            nn.ReLU(),
+        )
         # Residual blocks
-        self.layer1 = self._make_layer(block, 64, num_blocks[0], stride=1)
-        self.layer2 = self._make_layer(block, 128, num_blocks[1], stride=2)
-        self.layer3 = self._make_layer(block, 256, num_blocks[2], stride=2)
-        self.layer4 = self._make_layer(block, 512, num_blocks[3], stride=2)
+        self.conv2 = nn.Sequential(
+            nn.MaxPool2d(3, stride = 2, padding = 1),
+            self._make_layer(block, 64, num_blocks[0], stride=1),
+        )
+        self.conv3 = self._make_layer(block, 128, num_blocks[1], stride=2)
+        self.conv4 = self._make_layer(block, 256, num_blocks[2], stride=2)
+        self.conv5 = self._make_layer(block, 512, num_blocks[3], stride=2)
         # FC layer = 1 layer
-        self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
-        self.linear = nn.Linear(512 * block.EXPANSION, num_classes)
+        self.classifier = nn.Sequential(
+            nn.AdaptiveAvgPool2d((1, 1)),
+            nn.Flatten(),
+            nn.Linear(512 * block.EXPANSION, num_classes)
+        )
+
+    def _block_loader(self, block):
+        if(block not in [ResNet._BLOCK_BASIC, ResNet._BLOCK_BOTTLENECK]): 
+            raise ValueError(f"Acceptable values are ResNet._BLOCK_BASIC, ResNet._BLOCK_BOTTLENECK")
+
+        if(block == ResNet._BLOCK_BASIC):
+            block = BasicBlock
+        elif(block == ResNet._BLOCK_BOTTLENECK):
+            block == BottleneckBlock
+        return block
 
     def _make_layer(self, block, planes, num_blocks, stride):
         strides = [stride] + [1] * (num_blocks-1)
@@ -84,13 +107,9 @@ class ResNet(nn.Module):
 
     def forward(self, x):
         out = self.conv1(x)
-        assert out.shape == (4,64,112,112)
-        out = F.relu(self.bn1(out))
-        out = self.layer1(out)
-        out = self.layer2(out)
-        out = self.layer3(out)
-        out = self.layer4(out)
-        out = self.avgpool(out)
-        out = out.view(out.size(0), -1)
-        out = self.linear(out)
+        out = self.conv2(out)
+        out = self.conv3(out)
+        out = self.conv4(out)
+        out = self.conv5(out)
+        out = self.classifier(out)
         return out
