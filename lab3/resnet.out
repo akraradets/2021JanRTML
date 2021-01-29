@@ -17,3 +17,421 @@ Epoch time taken:  162.99976205825806
 !!!! new Learning Rate: 0.01
 Epoch 2/59
 ----------
+train Loss: 0.9677 Acc: 0.6611
+Epoch time taken:  151.8514528274536
+val Loss: 0.9310 Acc: 0.6863
+Epoch time taken:  164.37293529510498
+!!!! new Learning Rate: 0.01
+Epoch 3/59
+----------
+train Loss: 0.8334 Acc: 0.7111
+Epoch time taken:  151.6784439086914
+val Loss: 0.7606 Acc: 0.7449
+Epoch time taken:  164.24024963378906
+!!!! new Learning Rate: 0.01
+Epoch 4/59
+----------
+train Loss: 0.7429 Acc: 0.7458
+Epoch time taken:  151.425124168396
+val Loss: 0.8507 Acc: 0.7342
+Epoch time taken:  164.020610332489
+!!!! new Learning Rate: 0.01
+Epoch 5/59
+----------
+train Loss: 0.6798 Acc: 0.7670
+Epoch time taken:  151.44330430030823
+val Loss: 0.6861 Acc: 0.7738
+Epoch time taken:  164.08347344398499
+!!!! new Learning Rate: 0.01
+Epoch 6/59
+----------
+train Loss: 0.6270 Acc: 0.7846
+Epoch time taken:  151.57972812652588
+val Loss: 0.6732 Acc: 0.7925
+Epoch time taken:  164.09040212631226
+!!!! new Learning Rate: 0.01
+Epoch 7/59
+----------
+train Loss: 0.5818 Acc: 0.7988
+Epoch time taken:  151.75700616836548
+val Loss: 0.6387 Acc: 0.7970
+Epoch time taken:  164.46225333213806
+!!!! new Learning Rate: 0.01
+Epoch 8/59
+----------
+train Loss: 0.5486 Acc: 0.8108
+Epoch time taken:  151.4604971408844
+val Loss: 0.5836 Acc: 0.8039
+Epoch time taken:  163.9466950893402
+!!!! new Learning Rate: 0.01
+Epoch 9/59
+----------
+train Loss: 0.5178 Acc: 0.8237
+Epoch time taken:  151.5498878955841
+val Loss: 0.5659 Acc: 0.8168
+Epoch time taken:  164.7650008201599
+!!!! new Learning Rate: 0.01
+Epoch 10/59
+----------
+train Loss: 0.4869 Acc: 0.8334
+Epoch time taken:  151.57210111618042
+val Loss: 0.5675 Acc: 0.8181
+Epoch time taken:  164.1089608669281
+!!!! new Learning Rate: 0.01
+Epoch 11/59
+----------
+train Loss: 0.4705 Acc: 0.8395
+Epoch time taken:  151.75728392601013
+val Loss: 0.6358 Acc: 0.8035
+Epoch time taken:  164.41523575782776
+!!!! new Learning Rate: 0.01
+Epoch 12/59
+----------
+train Loss: 0.4506 Acc: 0.8441
+Epoch time taken:  151.7761995792389
+val Loss: 0.5447 Acc: 0.8262
+Epoch time taken:  164.404461145401
+!!!! new Learning Rate: 0.01
+Epoch 13/59
+----------
+train Loss: 0.4323 Acc: 0.8528
+Epoch time taken:  151.76293206214905
+val Loss: 0.5379 Acc: 0.8296
+Epoch time taken:  164.34063267707825
+!!!! new Learning Rate: 0.01
+Epoch 14/59
+----------
+train Loss: 0.4117 Acc: 0.8591
+Epoch time taken:  151.5864794254303
+val Loss: 0.5233 Acc: 0.8345
+Epoch time taken:  164.356303691864
+!!!! new Learning Rate: 0.01
+Epoch 15/59
+----------
+train Loss: 0.3972 Acc: 0.8646
+Epoch time taken:  151.0981366634369
+val Loss: 0.4624 Acc: 0.8475
+Epoch time taken:  163.7428879737854
+!!!! new Learning Rate: 0.01
+Epoch 16/59
+----------
+train Loss: 0.3799 Acc: 0.8693
+Epoch time taken:  151.64522290229797
+val Loss: 0.4914 Acc: 0.8438
+Epoch time taken:  164.29919028282166
+!!!! new Learning Rate: 0.01
+Epoch 17/59
+----------
+train Loss: 0.3718 Acc: 0.8715
+Epoch time taken:  151.4695553779602
+val Loss: 0.5326 Acc: 0.8423
+Epoch time taken:  164.02684807777405
+!!!! new Learning Rate: 0.01
+Epoch 18/59
+----------
+train Loss: 0.3620 Acc: 0.8769
+Epoch time taken:  151.63748264312744
+val Loss: 0.6097 Acc: 0.8260
+Epoch time taken:  164.23160910606384
+!!!! new Learning Rate: 0.01
+Epoch 19/59
+----------
+train Loss: 0.3480 Acc: 0.8803
+Epoch time taken:  151.97678208351135
+val Loss: 0.5723 Acc: 0.8288
+Epoch time taken:  164.48682856559753
+!!!! new Learning Rate: 0.01
+Epoch 20/59
+----------
+train Loss: 0.3379 Acc: 0.8838
+Epoch time taken:  151.65012979507446
+val Loss: 0.4546 Acc: 0.8571
+Epoch time taken:  164.2559711933136
+!!!! new Learning Rate: 0.01
+Epoch 21/59
+----------
+train Loss: 0.3273 Acc: 0.8892
+Epoch time taken:  151.80828070640564
+val Loss: 0.5089 Acc: 0.8444
+Epoch time taken:  164.46867156028748
+!!!! new Learning Rate: 0.01
+Epoch 22/59
+----------
+train Loss: 0.3099 Acc: 0.8926
+Epoch time taken:  151.6792335510254
+val Loss: 0.4581 Acc: 0.8560
+Epoch time taken:  164.22525691986084
+!!!! new Learning Rate: 0.01
+Epoch 23/59
+----------
+train Loss: 0.3090 Acc: 0.8922
+Epoch time taken:  151.71473169326782
+val Loss: 0.4995 Acc: 0.8487
+Epoch time taken:  164.3224446773529
+!!!! new Learning Rate: 0.01
+Epoch 24/59
+----------
+train Loss: 0.2927 Acc: 0.9008
+Epoch time taken:  151.69339394569397
+val Loss: 0.5063 Acc: 0.8562
+Epoch time taken:  164.27383017539978
+!!!! new Learning Rate: 0.01
+Epoch 25/59
+----------
+train Loss: 0.2907 Acc: 0.9007
+Epoch time taken:  151.34305095672607
+val Loss: 0.5415 Acc: 0.8473
+Epoch time taken:  164.33331775665283
+!!!! new Learning Rate: 0.01
+Epoch 26/59
+----------
+train Loss: 0.2716 Acc: 0.9069
+Epoch time taken:  151.50470352172852
+val Loss: 0.4461 Acc: 0.8656
+Epoch time taken:  164.0239942073822
+!!!! new Learning Rate: 0.01
+Epoch 27/59
+----------
+train Loss: 0.2705 Acc: 0.9056
+Epoch time taken:  151.51460313796997
+val Loss: 0.4710 Acc: 0.8648
+Epoch time taken:  164.12531185150146
+!!!! new Learning Rate: 0.01
+Epoch 28/59
+----------
+train Loss: 0.2612 Acc: 0.9098
+Epoch time taken:  151.65127658843994
+val Loss: 0.4770 Acc: 0.8634
+Epoch time taken:  164.40044713020325
+!!!! new Learning Rate: 0.01
+Epoch 29/59
+----------
+train Loss: 0.2589 Acc: 0.9108
+Epoch time taken:  151.34978127479553
+val Loss: 0.5128 Acc: 0.8620
+Epoch time taken:  163.88216948509216
+!!!! new Learning Rate: 0.01
+Epoch 30/59
+----------
+train Loss: 0.2495 Acc: 0.9142
+Epoch time taken:  151.32856225967407
+val Loss: 0.4853 Acc: 0.8676
+Epoch time taken:  164.5087378025055
+!!!! new Learning Rate: 0.01
+Epoch 31/59
+----------
+train Loss: 0.2406 Acc: 0.9161
+Epoch time taken:  151.37013053894043
+val Loss: 0.4500 Acc: 0.8627
+Epoch time taken:  163.85715508460999
+!!!! new Learning Rate: 0.01
+Epoch 32/59
+----------
+train Loss: 0.2358 Acc: 0.9174
+Epoch time taken:  151.71612811088562
+val Loss: 0.4871 Acc: 0.8618
+Epoch time taken:  164.34736108779907
+!!!! new Learning Rate: 0.01
+Epoch 33/59
+----------
+train Loss: 0.2363 Acc: 0.9166
+Epoch time taken:  151.63948011398315
+val Loss: 0.5686 Acc: 0.8579
+Epoch time taken:  164.13446354866028
+!!!! new Learning Rate: 0.01
+Epoch 34/59
+----------
+train Loss: 0.2235 Acc: 0.9222
+Epoch time taken:  151.51980185508728
+val Loss: 0.5185 Acc: 0.8633
+Epoch time taken:  164.0962109565735
+!!!! new Learning Rate: 0.01
+Epoch 35/59
+----------
+train Loss: 0.2193 Acc: 0.9232
+Epoch time taken:  151.73637580871582
+val Loss: 0.4884 Acc: 0.8671
+Epoch time taken:  164.30235981941223
+!!!! new Learning Rate: 0.01
+Epoch 36/59
+----------
+train Loss: 0.2180 Acc: 0.9240
+Epoch time taken:  151.13362288475037
+val Loss: 0.4926 Acc: 0.8647
+Epoch time taken:  163.71922850608826
+!!!! new Learning Rate: 0.01
+Epoch 37/59
+----------
+train Loss: 0.2113 Acc: 0.9293
+Epoch time taken:  151.55263304710388
+val Loss: 0.5427 Acc: 0.8661
+Epoch time taken:  164.03784728050232
+!!!! new Learning Rate: 0.001
+Epoch 38/59
+----------
+train Loss: 0.1388 Acc: 0.9518
+Epoch time taken:  151.8406686782837
+val Loss: 0.4704 Acc: 0.8842
+Epoch time taken:  164.58492231369019
+!!!! new Learning Rate: 0.001
+Epoch 39/59
+----------
+train Loss: 0.1174 Acc: 0.9602
+Epoch time taken:  151.44650411605835
+val Loss: 0.4197 Acc: 0.8912
+Epoch time taken:  164.07019066810608
+!!!! new Learning Rate: 0.001
+Epoch 40/59
+----------
+train Loss: 0.1041 Acc: 0.9634
+Epoch time taken:  151.6748456954956
+val Loss: 0.4273 Acc: 0.8905
+Epoch time taken:  164.27047204971313
+!!!! new Learning Rate: 0.001
+Epoch 41/59
+----------
+train Loss: 0.0988 Acc: 0.9660
+Epoch time taken:  151.2904715538025
+val Loss: 0.4692 Acc: 0.8880
+Epoch time taken:  163.86065101623535
+!!!! new Learning Rate: 0.001
+Epoch 42/59
+----------
+train Loss: 0.0915 Acc: 0.9679
+Epoch time taken:  151.74776887893677
+val Loss: 0.4540 Acc: 0.8921
+Epoch time taken:  164.32278180122375
+!!!! new Learning Rate: 0.001
+Epoch 43/59
+----------
+train Loss: 0.0892 Acc: 0.9698
+Epoch time taken:  152.05358934402466
+val Loss: 0.4419 Acc: 0.8895
+Epoch time taken:  164.71739673614502
+!!!! new Learning Rate: 0.001
+Epoch 44/59
+----------
+train Loss: 0.0832 Acc: 0.9707
+Epoch time taken:  151.76838064193726
+val Loss: 0.4577 Acc: 0.8962
+Epoch time taken:  164.33418941497803
+!!!! new Learning Rate: 0.001
+Epoch 45/59
+----------
+train Loss: 0.0800 Acc: 0.9723
+Epoch time taken:  151.85571765899658
+val Loss: 0.4428 Acc: 0.8976
+Epoch time taken:  164.38800311088562
+!!!! new Learning Rate: 0.001
+Epoch 46/59
+----------
+train Loss: 0.0809 Acc: 0.9716
+Epoch time taken:  151.41215872764587
+val Loss: 0.4278 Acc: 0.8977
+Epoch time taken:  164.69614124298096
+!!!! new Learning Rate: 0.001
+Epoch 47/59
+----------
+train Loss: 0.0744 Acc: 0.9736
+Epoch time taken:  151.24450159072876
+val Loss: 0.4340 Acc: 0.8982
+Epoch time taken:  163.73348379135132
+!!!! new Learning Rate: 0.001
+Epoch 48/59
+----------
+train Loss: 0.0741 Acc: 0.9743
+Epoch time taken:  151.5109691619873
+val Loss: 0.4581 Acc: 0.8944
+Epoch time taken:  164.14105820655823
+!!!! new Learning Rate: 0.001
+Epoch 49/59
+----------
+train Loss: 0.0748 Acc: 0.9733
+Epoch time taken:  151.7981240749359
+val Loss: 0.4559 Acc: 0.8966
+Epoch time taken:  164.28628206253052
+!!!! new Learning Rate: 0.001
+Epoch 50/59
+----------
+train Loss: 0.0713 Acc: 0.9751
+Epoch time taken:  151.6881980895996
+val Loss: 0.4462 Acc: 0.8974
+Epoch time taken:  164.4435374736786
+!!!! new Learning Rate: 0.0001
+Epoch 51/59
+----------
+train Loss: 0.0643 Acc: 0.9787
+Epoch time taken:  151.63595366477966
+val Loss: 0.4540 Acc: 0.8977
+Epoch time taken:  164.30475044250488
+!!!! new Learning Rate: 0.0001
+Epoch 52/59
+----------
+train Loss: 0.0639 Acc: 0.9771
+Epoch time taken:  151.16718935966492
+val Loss: 0.4356 Acc: 0.8996
+Epoch time taken:  163.7877016067505
+!!!! new Learning Rate: 0.0001
+Epoch 53/59
+----------
+train Loss: 0.0643 Acc: 0.9770
+Epoch time taken:  151.67906165122986
+val Loss: 0.4563 Acc: 0.8998
+Epoch time taken:  164.20375275611877
+!!!! new Learning Rate: 0.0001
+Epoch 54/59
+----------
+train Loss: 0.0634 Acc: 0.9777
+Epoch time taken:  151.6931643486023
+val Loss: 0.4478 Acc: 0.8992
+Epoch time taken:  164.33120822906494
+!!!! new Learning Rate: 0.0001
+Epoch 55/59
+----------
+train Loss: 0.0626 Acc: 0.9782
+Epoch time taken:  151.7276749610901
+val Loss: 0.4705 Acc: 0.8972
+Epoch time taken:  164.30204558372498
+!!!! new Learning Rate: 0.0001
+Epoch 56/59
+----------
+train Loss: 0.0619 Acc: 0.9792
+Epoch time taken:  151.7705192565918
+val Loss: 0.4390 Acc: 0.8996
+Epoch time taken:  164.39393997192383
+!!!! new Learning Rate: 0.0001
+Epoch 57/59
+----------
+train Loss: 0.0594 Acc: 0.9788
+Epoch time taken:  151.38296747207642
+val Loss: 0.4625 Acc: 0.8971
+Epoch time taken:  164.00911045074463
+!!!! new Learning Rate: 0.0001
+Epoch 58/59
+----------
+train Loss: 0.0616 Acc: 0.9790
+Epoch time taken:  151.976145029068
+val Loss: 0.4472 Acc: 0.8987
+Epoch time taken:  164.65126371383667
+!!!! new Learning Rate: 0.0001
+Epoch 59/59
+----------
+train Loss: 0.0612 Acc: 0.9788
+Epoch time taken:  151.67401671409607
+val Loss: 0.4551 Acc: 0.8985
+Epoch time taken:  164.18370056152344
+!!!! new Learning Rate: 0.0001
+Training complete in 164m 21s
+Best val Acc: 0.899800
+===== Testing =====
+Accuracy of the network on the 10000 test images: 89 %
+Accuracy of plane : 91 %
+Accuracy of   car : 94 %
+Accuracy of  bird : 85 %
+Accuracy of   cat : 76 %
+Accuracy of  deer : 91 %
+Accuracy of   dog : 84 %
+Accuracy of  frog : 91 %
+Accuracy of horse : 92 %
+Accuracy of  ship : 93 %
+Accuracy of truck : 92 %
