@@ -60,8 +60,8 @@ model = ResNet(ResNet._BLOCK_BASIC, [2, 2, 2, 2], num_classes).to(device)
 # Optimizer and loss function
 criterion = nn.CrossEntropyLoss()
 params_to_update = model.parameters()
-optimizer = optim.Adam(params_to_update, lr=0.01, weight_decay=0.0001)
-
-t = trainer(device,criterion, optimizer)
-model = t.train(model, dataloaders, num_epochs=60, weights_name='resnet18_adam_0.01_0.0001')
+optimizer = optim.Adam(params_to_update, lr=0.01)
+scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer,mode='min')
+t = trainer(device,criterion, optimizer,scheduler)
+model = t.train(model, dataloaders, num_epochs=60, weights_name='resnet18_adam_0.01')
 t.test(model,test_dataloader)

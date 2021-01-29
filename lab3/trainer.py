@@ -4,11 +4,11 @@ import os
 # from copy import copy
 from copy import deepcopy
 class trainer():
-    def __init__(self,device, criterion, optimizer) -> None:
+    def __init__(self,device, criterion, optimizer,scheduler=None) -> None:
         self.device = device
         self.criterion = criterion
         self.optimizer = optimizer
-
+        self.scheduler = scheduler
         self._train_loss = []
         self._train_acc = []
         self._val_loss = []
@@ -34,7 +34,6 @@ class trainer():
         with open(f"{self._save_path}/{weights_name}_train_loss.txt", "wb") as f:
             pickle.dump(self._train_loss, f)
 
-
     def train(self, model, dataloaders, num_epochs=25, weights_name='weight_save', is_inception=False):
         device = self.device
         criterion = self.criterion
@@ -51,8 +50,7 @@ class trainer():
 
         for epoch in range(num_epochs):
             epoch_start = time.time()
-
-            print(f'Epoch {epoch}/{num_epochs - 1}')
+            print(f"Epoch {epoch}/{num_epochs - 1}:LR: {self.optimizer.param_groups[0]['lr']}")
             print('-' * 10)
 
             # Each epoch has a training and validation phase
@@ -123,6 +121,8 @@ class trainer():
                         self.save(weights_name)
                     self._val_loss.append(epoch_loss)
                     self._val_acc.append(epoch_acc)
+                    if(self.scheduler != None):
+                        self.scheduler.step(epoch_loss)
                 elif phase == 'train':
                     self._train_loss.append(epoch_loss)
                     self._train_acc.append(epoch_acc)

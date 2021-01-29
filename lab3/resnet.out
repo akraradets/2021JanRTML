@@ -3,21 +3,17 @@ Files already downloaded and verified
 cuda:1
 Epoch 0/59
 ----------
-train Loss: 2.0346 Acc: 0.2380
-Epoch time taken:  146.74098420143127
-val Loss: 1.7862 Acc: 0.3287
-Epoch time taken:  158.302241563797
+train Loss: 1.7886 Acc: 0.3412
+Epoch time taken:  148.62398290634155
+val Loss: 1.3644 Acc: 0.5085
+Epoch time taken:  161.01564049720764
+!!!! new Learning Rate: 0.01
 Epoch 1/59
 ----------
-train Loss: 1.7704 Acc: 0.3468
-Epoch time taken:  148.3478832244873
-val Loss: 1.6972 Acc: 0.3601
-Epoch time taken:  159.86633205413818
+train Loss: 1.2482 Acc: 0.5495
+Epoch time taken:  150.4335072040558
+val Loss: 1.2165 Acc: 0.6236
+Epoch time taken:  162.99976205825806
+!!!! new Learning Rate: 0.01
 Epoch 2/59
-----------
-train Loss: 1.6869 Acc: 0.3789
-Epoch time taken:  148.36640310287476
-val Loss: 1.5768 Acc: 0.4224
-Epoch time taken:  160.26872873306274
-Epoch 3/59
 ----------

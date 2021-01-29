@@ -1,0 +1,14 @@
+Files already downloaded and verified
+Files already downloaded and verified
+cuda:0
+Epoch 0/59
+----------
+train Loss: 1.8468 Acc: 0.3208
+Epoch time taken:  181.65927267074585
+val Loss: 1.4595 Acc: 0.4619
+Epoch time taken:  196.36788272857666
+!!!! new Learning Rate: 0.01
+Epoch 1/59
+----------
+train Loss: 1.3675 Acc: 0.5060
+Epoch time taken:  187.11431574821472

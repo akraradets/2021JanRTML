@@ -54,13 +54,14 @@ from trainer import trainer
 def SEResNet18(num_classes = 10):
     return ResNet(ResNet._BLOCK_SEBASIC, [2, 2, 2, 2], num_classes)
 
-device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 print(device)
 model = SEResNet18().to(device)
 criterion = nn.CrossEntropyLoss()
 params_to_update = model.parameters()
 # Now we'll use Adam optimization
-optimizer = optim.Adam(params_to_update, lr=0.01, weight_decay=0.0001)
-t = trainer(device,criterion, optimizer)
-model = t.train(model, dataloaders, num_epochs=60, weights_name='seresnet18_adam_0.01_0.0001')
+optimizer = optim.Adam(params_to_update, lr=0.01)
+scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer,mode='min')
+t = trainer(device,criterion, optimizer,scheduler)
+model = t.train(model, dataloaders, num_epochs=60, weights_name='seresnet18_adam_0.01')
 t.test(model,test_dataloader)
