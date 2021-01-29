@@ -15,3 +15,9 @@ val Loss: 1.6972 Acc: 0.3601
 Epoch time taken:  159.86633205413818
 Epoch 2/59
 ----------
+train Loss: 1.6869 Acc: 0.3789
+Epoch time taken:  148.36640310287476
+val Loss: 1.5768 Acc: 0.4224
+Epoch time taken:  160.26872873306274
+Epoch 3/59
+----------
