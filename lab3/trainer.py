@@ -134,3 +134,32 @@ class trainer():
         model.load_state_dict(best_model_wts)
         self.save(weights_name)
         return model
+
+    def test(self, model, dataloader):
+        import numpy as np
+        device = self.device
+        model.eval()
+        classes = np.array(('plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck'))
+        #Testing Accuracy
+        correct = 0
+        total = 0
+        #Testing classification accuracy for individual classes.
+        class_correct = np.zeros(10)
+        class_total = np.zeros(10)
+        with torch.no_grad():
+            for data in dataloader:
+                images, labels = data[0].to(device), data[1].to(device)
+                # print(labels)
+                outputs = model(images)
+                _, predicted = torch.max(outputs.data, 1)
+                total += labels.size(0)
+                correct += (predicted == labels).sum().item()
+                c = (predicted == labels).squeeze()
+                for i in range(4):
+                    label = labels[i]
+                    class_correct[label] += c[i].item()
+                    class_total[label] += 1
+        print('='*5,"Testing","="*5)
+        print('Accuracy of the network on the 10000 test images: %d %%' % (100 * correct / total))
+        for i in range(10):
+            print('Accuracy of %5s : %2d %%' % (classes[i], 100 * class_correct[i] / class_total[i]))

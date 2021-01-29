@@ -12,7 +12,7 @@ class BasicBlock(nn.Module):
         super().__init__()
         self.conv1 = nn.Conv2d(in_planes, out_planes, kernel_size=3, stride=stride, padding=1, bias=False)
         self.bn1 = nn.BatchNorm2d(out_planes)
-        self.conv2 = nn.Conv2d(out_planes, out_planes, kernel_size=3, stride=1, padding=1, bias=False)
+        self.conv2 = nn.Conv2d(out_planes, out_planes, kernel_size=3,stride=1, padding=1, bias=False)
         self.bn2 = nn.BatchNorm2d(out_planes)
         self.shortcut = nn.Sequential()
         # If output size is not equal to input size, reshape it with 1x1 convolution
@@ -28,6 +28,63 @@ class BasicBlock(nn.Module):
         out += self.shortcut(x)
         out = F.relu(out)
         return out
+
+
+class SELayer(nn.Module):
+    def __init__(self, channel, reduction=16):
+        super().__init__()
+        self.avg_pool = nn.AdaptiveAvgPool2d(1)
+        self.fc = nn.Sequential(
+            nn.Linear(channel, channel // reduction, bias=False),
+            nn.ReLU(inplace=True),
+            nn.Linear(channel // reduction, channel, bias=False),
+            nn.Sigmoid()
+        )
+
+    def forward(self, x):
+        # [batch_size, channels, height, width]
+        b, c, _, _ = x.size()
+        # global pooling
+        y = self.avg_pool(x)
+        # FC + ReLU + FC + Sigmoid
+        y = y.view(b, c)
+        y = self.fc(y)
+
+        y = y.view(b, c, 1, 1)
+        return x * y.expand_as(x)
+class SEBasicBlock(nn.Module):
+    '''
+    SEBasicBlock: Standard two-convolution residual block with an SE Module between the
+                          second convolution and the identity addition
+    '''
+    EXPANSION = 1
+
+    def __init__(self, in_planes, out_planes, stride=1, reduction=16):
+        super().__init__()
+        self.conv1 = nn.Conv2d(in_planes, out_planes, kernel_size=3, stride=stride, padding=1, bias=False)
+        self.bn1 = nn.BatchNorm2d(out_planes)
+        self.conv2 = nn.Conv2d(out_planes, out_planes, kernel_size=3,stride=1, padding=1, bias=False)
+        self.bn2 = nn.BatchNorm2d(out_planes)
+        self.se = SELayer(out_planes, reduction)
+
+        self.shortcut = nn.Sequential()
+        # If output size is not equal to input size, reshape it with a 1x1 conv
+        if stride != 1 or in_planes != out_planes:
+            self.shortcut = nn.Sequential(
+                nn.Conv2d(in_planes, out_planes,kernel_size=1, stride=stride, bias=False),
+                nn.BatchNorm2d(self.EXPANSION * out_planes)
+            )
+
+    def forward(self, x):
+        out = F.relu(self.bn1(self.conv1(x)))
+        out = self.bn2(self.conv2(out))
+
+        out = self.se(out)              # se net add here
+        
+        out += self.shortcut(x)         # shortcut just plus it!!!
+        out = F.relu(out)
+        return out
+
 
 class BottleneckBlock(nn.Module):
     '''
@@ -59,9 +116,14 @@ class BottleneckBlock(nn.Module):
         out = F.relu(out)
         return out
 
+
+
+
+
 class ResNet(nn.Module):
     _BLOCK_BASIC = 0
     _BLOCK_BOTTLENECK = 1
+    _BLOCK_SEBASIC = 2
     def __init__(self, block, num_blocks, num_classes=10):
         block = self._block_loader(block)
         super().__init__()
@@ -88,13 +150,15 @@ class ResNet(nn.Module):
         )
 
     def _block_loader(self, block):
-        if(block not in [ResNet._BLOCK_BASIC, ResNet._BLOCK_BOTTLENECK]): 
-            raise ValueError(f"Acceptable values are ResNet._BLOCK_BASIC, ResNet._BLOCK_BOTTLENECK")
+        if(block not in [ResNet._BLOCK_BASIC, ResNet._BLOCK_BOTTLENECK, ResNet._BLOCK_SEBASIC]): 
+            raise ValueError(f"Acceptable values are ResNet._BLOCK_BASIC, ResNet._BLOCK_BOTTLENECK, ResNet._BLOCK_SEBASIC")
 
         if(block == ResNet._BLOCK_BASIC):
             block = BasicBlock
         elif(block == ResNet._BLOCK_BOTTLENECK):
             block == BottleneckBlock
+        elif(block == ResNet._BLOCK_SEBASIC):
+            block = SEBasicBlock
         return block
 
     def _make_layer(self, block, planes, num_blocks, stride):
