@@ -135,11 +135,11 @@ class trainer():
         self.save(weights_name)
         return model
 
-    def test(self, model, dataloader):
+    def test(self, model, dataloader, classes):
         import numpy as np
         device = self.device
         model.eval()
-        classes = np.array(('plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck'))
+        # classes = np.array(('plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck'))
         #Testing Accuracy
         correct = 0
         total = 0
@@ -160,6 +160,6 @@ class trainer():
                     class_correct[label] += c[i].item()
                     class_total[label] += 1
         print('='*5,"Testing","="*5)
-        print('Accuracy of the network on the 10000 test images: %d %%' % (100 * correct / total))
-        for i in range(10):
+        print('Accuracy of the network on the',total,'test images: %d %%' % (100 * correct / total))
+        for i in range(len(classes)):
             print('Accuracy of %5s : %2d %%' % (classes[i], 100 * class_correct[i] / class_total[i]))
