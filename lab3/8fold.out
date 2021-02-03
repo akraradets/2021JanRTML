@@ -1,0 +1,513 @@
+!!!!!!!!!!!!!!!!!!!!!!! Fold-1 !!!!!!!!!!!!!!!!!!!!
+cuda:1
+Epoch 0/9:LR: 0.01
+----------
+train Loss: 0.6813 Acc: 0.5357
+Epoch time taken:  0.29663729667663574
+val Loss: 0.6316 Acc: 0.7500
+Epoch time taken:  0.4630706310272217
+Epoch 1/9:LR: 0.01
+----------
+train Loss: 0.6210 Acc: 0.8929
+Epoch time taken:  0.304703950881958
+val Loss: 0.5593 Acc: 1.0000
+Epoch time taken:  0.48851799964904785
+Epoch 2/9:LR: 0.01
+----------
+train Loss: 0.5527 Acc: 0.9286
+Epoch time taken:  0.29077696800231934
+val Loss: 0.4552 Acc: 1.0000
+Epoch time taken:  0.4563026428222656
+Epoch 3/9:LR: 0.01
+----------
+train Loss: 0.4492 Acc: 0.8929
+Epoch time taken:  0.2709972858428955
+val Loss: 0.3361 Acc: 1.0000
+Epoch time taken:  0.4279332160949707
+Epoch 4/9:LR: 0.01
+----------
+train Loss: 0.3161 Acc: 0.9643
+Epoch time taken:  0.27035951614379883
+val Loss: 0.2204 Acc: 1.0000
+Epoch time taken:  0.4276413917541504
+Epoch 5/9:LR: 0.01
+----------
+train Loss: 0.3171 Acc: 0.8929
+Epoch time taken:  0.27047228813171387
+val Loss: 0.1392 Acc: 1.0000
+Epoch time taken:  0.42784738540649414
+Epoch 6/9:LR: 0.01
+----------
+train Loss: 0.1374 Acc: 0.9643
+Epoch time taken:  0.2766602039337158
+val Loss: 0.0795 Acc: 1.0000
+Epoch time taken:  0.4414992332458496
+Epoch 7/9:LR: 0.01
+----------
+train Loss: 0.1032 Acc: 1.0000
+Epoch time taken:  0.27692365646362305
+val Loss: 0.0474 Acc: 1.0000
+Epoch time taken:  0.4357411861419678
+Epoch 8/9:LR: 0.01
+----------
+train Loss: 0.0690 Acc: 1.0000
+Epoch time taken:  0.2844259738922119
+val Loss: 0.0294 Acc: 1.0000
+Epoch time taken:  0.4417381286621094
+Epoch 9/9:LR: 0.01
+----------
+train Loss: 0.0472 Acc: 1.0000
+Epoch time taken:  0.2730705738067627
+val Loss: 0.0173 Acc: 1.0000
+Epoch time taken:  0.43157052993774414
+Training complete in 0m 5s
+Best val Acc: 1.000000
+!!!!!!!!!!!!!!!!!!!!!!! Fold-2 !!!!!!!!!!!!!!!!!!!!
+cuda:1
+Epoch 0/9:LR: 0.01
+----------
+train Loss: 0.6660 Acc: 0.7500
+Epoch time taken:  0.2748727798461914
+val Loss: 0.5783 Acc: 1.0000
+Epoch time taken:  0.4388401508331299
+Epoch 1/9:LR: 0.01
+----------
+train Loss: 0.5801 Acc: 0.9286
+Epoch time taken:  0.29636311531066895
+val Loss: 0.4765 Acc: 1.0000
+Epoch time taken:  0.4989461898803711
+Epoch 2/9:LR: 0.01
+----------
+train Loss: 0.4964 Acc: 0.9286
+Epoch time taken:  0.3003089427947998
+val Loss: 0.3611 Acc: 1.0000
+Epoch time taken:  0.46428847312927246
+Epoch 3/9:LR: 0.01
+----------
+train Loss: 0.3826 Acc: 0.9643
+Epoch time taken:  0.2754528522491455
+val Loss: 0.2237 Acc: 1.0000
+Epoch time taken:  0.43388938903808594
+Epoch 4/9:LR: 0.01
+----------
+train Loss: 0.2325 Acc: 0.9643
+Epoch time taken:  0.2709372043609619
+val Loss: 0.1210 Acc: 1.0000
+Epoch time taken:  0.4374806880950928
+Epoch 5/9:LR: 0.01
+----------
+train Loss: 0.1697 Acc: 1.0000
+Epoch time taken:  0.2728922367095947
+val Loss: 0.0552 Acc: 1.0000
+Epoch time taken:  0.43250560760498047
+Epoch 6/9:LR: 0.01
+----------
+train Loss: 0.1192 Acc: 1.0000
+Epoch time taken:  0.2803947925567627
+val Loss: 0.0292 Acc: 1.0000
+Epoch time taken:  0.43860960006713867
+Epoch 7/9:LR: 0.01
+----------
+train Loss: 0.1020 Acc: 0.9643
+Epoch time taken:  0.2735433578491211
+val Loss: 0.0116 Acc: 1.0000
+Epoch time taken:  0.4329805374145508
+Epoch 8/9:LR: 0.01
+----------
+train Loss: 0.0386 Acc: 1.0000
+Epoch time taken:  0.27356743812561035
+val Loss: 0.0084 Acc: 1.0000
+Epoch time taken:  0.43155717849731445
+Epoch 9/9:LR: 0.01
+----------
+train Loss: 0.0977 Acc: 1.0000
+Epoch time taken:  0.27301812171936035
+val Loss: 0.0058 Acc: 1.0000
+Epoch time taken:  0.4327409267425537
+Training complete in 0m 5s
+Best val Acc: 1.000000
+!!!!!!!!!!!!!!!!!!!!!!! Fold-3 !!!!!!!!!!!!!!!!!!!!
+cuda:1
+Epoch 0/9:LR: 0.01
+----------
+train Loss: 0.6959 Acc: 0.4286
+Epoch time taken:  0.2751610279083252
+val Loss: 0.6404 Acc: 0.7500
+Epoch time taken:  0.44554615020751953
+Epoch 1/9:LR: 0.01
+----------
+train Loss: 0.6130 Acc: 0.9286
+Epoch time taken:  0.29633617401123047
+val Loss: 0.5643 Acc: 1.0000
+Epoch time taken:  0.4662957191467285
+Epoch 2/9:LR: 0.01
+----------
+train Loss: 0.5517 Acc: 0.9286
+Epoch time taken:  0.3323075771331787
+val Loss: 0.4683 Acc: 1.0000
+Epoch time taken:  0.5004444122314453
+Epoch 3/9:LR: 0.01
+----------
+train Loss: 0.4571 Acc: 0.9286
+Epoch time taken:  0.27327871322631836
+val Loss: 0.3525 Acc: 1.0000
+Epoch time taken:  0.43360066413879395
+Epoch 4/9:LR: 0.01
+----------
+train Loss: 0.3701 Acc: 0.9286
+Epoch time taken:  0.2741520404815674
+val Loss: 0.2399 Acc: 1.0000
+Epoch time taken:  0.43349575996398926
+Epoch 5/9:LR: 0.01
+----------
+train Loss: 0.2553 Acc: 0.9643
+Epoch time taken:  0.27402162551879883
+val Loss: 0.1373 Acc: 1.0000
+Epoch time taken:  0.4333512783050537
+Epoch 6/9:LR: 0.01
+----------
+train Loss: 0.1444 Acc: 1.0000
+Epoch time taken:  0.2729196548461914
+val Loss: 0.0828 Acc: 1.0000
+Epoch time taken:  0.4332747459411621
+Epoch 7/9:LR: 0.01
+----------
+train Loss: 0.1073 Acc: 1.0000
+Epoch time taken:  0.2845613956451416
+val Loss: 0.0380 Acc: 1.0000
+Epoch time taken:  0.4518730640411377
+Epoch 8/9:LR: 0.01
+----------
+train Loss: 0.0823 Acc: 1.0000
+Epoch time taken:  0.2775766849517822
+val Loss: 0.0188 Acc: 1.0000
+Epoch time taken:  0.43663811683654785
+Epoch 9/9:LR: 0.01
+----------
+train Loss: 0.1045 Acc: 0.9643
+Epoch time taken:  0.2819843292236328
+val Loss: 0.0105 Acc: 1.0000
+Epoch time taken:  0.4413151741027832
+Training complete in 0m 5s
+Best val Acc: 1.000000
+!!!!!!!!!!!!!!!!!!!!!!! Fold-4 !!!!!!!!!!!!!!!!!!!!
+cuda:1
+Epoch 0/9:LR: 0.01
+----------
+train Loss: 0.6690 Acc: 0.8214
+Epoch time taken:  0.283602237701416
+val Loss: 0.6106 Acc: 1.0000
+Epoch time taken:  0.4457275867462158
+Epoch 1/9:LR: 0.01
+----------
+train Loss: 0.6003 Acc: 1.0000
+Epoch time taken:  0.29505300521850586
+val Loss: 0.5290 Acc: 1.0000
+Epoch time taken:  0.4647970199584961
+Epoch 2/9:LR: 0.01
+----------
+train Loss: 0.5069 Acc: 0.9643
+Epoch time taken:  0.29373979568481445
+val Loss: 0.4189 Acc: 1.0000
+Epoch time taken:  0.4923431873321533
+Epoch 3/9:LR: 0.01
+----------
+train Loss: 0.4349 Acc: 0.8571
+Epoch time taken:  0.29103803634643555
+val Loss: 0.3209 Acc: 1.0000
+Epoch time taken:  0.4617025852203369
+Epoch 4/9:LR: 0.01
+----------
+train Loss: 0.2831 Acc: 0.9643
+Epoch time taken:  0.3266487121582031
+val Loss: 0.2197 Acc: 1.0000
+Epoch time taken:  0.5334577560424805
+Epoch 5/9:LR: 0.01
+----------
+train Loss: 0.2165 Acc: 0.9643
+Epoch time taken:  0.2804222106933594
+val Loss: 0.1360 Acc: 1.0000
+Epoch time taken:  0.44028186798095703
+Epoch 6/9:LR: 0.01
+----------
+train Loss: 0.1629 Acc: 0.9643
+Epoch time taken:  0.27469468116760254
+val Loss: 0.0849 Acc: 1.0000
+Epoch time taken:  0.43406248092651367
+Epoch 7/9:LR: 0.01
+----------
+train Loss: 0.0799 Acc: 1.0000
+Epoch time taken:  0.27522945404052734
+val Loss: 0.0751 Acc: 1.0000
+Epoch time taken:  0.4356114864349365
+Epoch 8/9:LR: 0.01
+----------
+train Loss: 0.0934 Acc: 1.0000
+Epoch time taken:  0.2731313705444336
+val Loss: 0.0493 Acc: 1.0000
+Epoch time taken:  0.44047117233276367
+Epoch 9/9:LR: 0.01
+----------
+train Loss: 0.0443 Acc: 1.0000
+Epoch time taken:  0.27935194969177246
+val Loss: 0.0276 Acc: 1.0000
+Epoch time taken:  0.4405550956726074
+Training complete in 0m 5s
+Best val Acc: 1.000000
+!!!!!!!!!!!!!!!!!!!!!!! Fold-5 !!!!!!!!!!!!!!!!!!!!
+cuda:1
+Epoch 0/9:LR: 0.01
+----------
+train Loss: 0.6877 Acc: 0.5000
+Epoch time taken:  0.27837157249450684
+val Loss: 0.6848 Acc: 0.5000
+Epoch time taken:  0.4443936347961426
+Epoch 1/9:LR: 0.01
+----------
+train Loss: 0.6320 Acc: 0.6071
+Epoch time taken:  0.295806884765625
+val Loss: 0.6644 Acc: 1.0000
+Epoch time taken:  0.4692723751068115
+Epoch 2/9:LR: 0.01
+----------
+train Loss: 0.5785 Acc: 0.8929
+Epoch time taken:  0.2880289554595947
+val Loss: 0.6463 Acc: 0.5000
+Epoch time taken:  0.4546520709991455
+Epoch 3/9:LR: 0.01
+----------
+train Loss: 0.4462 Acc: 0.9643
+Epoch time taken:  0.2852818965911865
+val Loss: 0.6229 Acc: 0.5000
+Epoch time taken:  0.4487340450286865
+Epoch 4/9:LR: 0.01
+----------
+train Loss: 0.4066 Acc: 0.9643
+Epoch time taken:  0.27928853034973145
+val Loss: 0.6353 Acc: 0.5000
+Epoch time taken:  0.44098377227783203
+Epoch 5/9:LR: 0.01
+----------
+train Loss: 0.2162 Acc: 0.9643
+Epoch time taken:  0.27753472328186035
+val Loss: 0.6448 Acc: 0.5000
+Epoch time taken:  0.4422183036804199
+Epoch 6/9:LR: 0.01
+----------
+train Loss: 0.1769 Acc: 0.9643
+Epoch time taken:  0.2767634391784668
+val Loss: 0.7059 Acc: 0.5000
+Epoch time taken:  0.440079927444458
+Epoch 7/9:LR: 0.01
+----------
+train Loss: 0.1477 Acc: 0.9286
+Epoch time taken:  0.2806544303894043
+val Loss: 0.8232 Acc: 0.5000
+Epoch time taken:  0.443509578704834
+Epoch 8/9:LR: 0.01
+----------
+train Loss: 0.0457 Acc: 1.0000
+Epoch time taken:  0.2774515151977539
+val Loss: 0.8116 Acc: 0.5000
+Epoch time taken:  0.4393346309661865
+Epoch 9/9:LR: 0.01
+----------
+train Loss: 0.0782 Acc: 1.0000
+Epoch time taken:  0.28741455078125
+val Loss: 0.7351 Acc: 0.5000
+Epoch time taken:  0.44930577278137207
+Training complete in 0m 5s
+Best val Acc: 1.000000
+!!!!!!!!!!!!!!!!!!!!!!! Fold-6 !!!!!!!!!!!!!!!!!!!!
+cuda:1
+Epoch 0/9:LR: 0.01
+----------
+train Loss: 0.6690 Acc: 0.6786
+Epoch time taken:  0.31050610542297363
+val Loss: 0.6769 Acc: 0.7500
+Epoch time taken:  0.5021841526031494
+Epoch 1/9:LR: 0.01
+----------
+train Loss: 0.5854 Acc: 0.9643
+Epoch time taken:  0.367917537689209
+val Loss: 0.6062 Acc: 1.0000
+Epoch time taken:  0.5947468280792236
+Epoch 2/9:LR: 0.01
+----------
+train Loss: 0.5100 Acc: 1.0000
+Epoch time taken:  0.3169529438018799
+val Loss: 0.5285 Acc: 1.0000
+Epoch time taken:  0.5193755626678467
+Epoch 3/9:LR: 0.01
+----------
+train Loss: 0.3551 Acc: 0.9643
+Epoch time taken:  0.32108044624328613
+val Loss: 0.3957 Acc: 1.0000
+Epoch time taken:  0.5161690711975098
+Epoch 4/9:LR: 0.01
+----------
+train Loss: 0.2571 Acc: 0.9286
+Epoch time taken:  0.30057835578918457
+val Loss: 0.2559 Acc: 1.0000
+Epoch time taken:  0.48547959327697754
+Epoch 5/9:LR: 0.01
+----------
+train Loss: 0.1765 Acc: 1.0000
+Epoch time taken:  0.3275022506713867
+val Loss: 0.1627 Acc: 1.0000
+Epoch time taken:  0.5212569236755371
+Epoch 6/9:LR: 0.01
+----------
+train Loss: 0.0849 Acc: 1.0000
+Epoch time taken:  0.364091157913208
+val Loss: 0.1147 Acc: 1.0000
+Epoch time taken:  0.5674099922180176
+Epoch 7/9:LR: 0.01
+----------
+train Loss: 0.0502 Acc: 1.0000
+Epoch time taken:  0.34755539894104004
+val Loss: 0.0722 Acc: 1.0000
+Epoch time taken:  0.5378601551055908
+Epoch 8/9:LR: 0.01
+----------
+train Loss: 0.1142 Acc: 0.9643
+Epoch time taken:  0.3022923469543457
+val Loss: 0.0574 Acc: 1.0000
+Epoch time taken:  0.4887087345123291
+Epoch 9/9:LR: 0.01
+----------
+train Loss: 0.0398 Acc: 1.0000
+Epoch time taken:  0.3003249168395996
+val Loss: 0.0485 Acc: 1.0000
+Epoch time taken:  0.4865260124206543
+Training complete in 0m 6s
+Best val Acc: 1.000000
+!!!!!!!!!!!!!!!!!!!!!!! Fold-7 !!!!!!!!!!!!!!!!!!!!
+cuda:1
+Epoch 0/9:LR: 0.01
+----------
+train Loss: 0.6799 Acc: 0.4643
+Epoch time taken:  0.3002583980560303
+val Loss: 0.5960 Acc: 0.7500
+Epoch time taken:  0.4931924343109131
+Epoch 1/9:LR: 0.01
+----------
+train Loss: 0.6009 Acc: 0.8214
+Epoch time taken:  0.29375314712524414
+val Loss: 0.5005 Acc: 1.0000
+Epoch time taken:  0.4593172073364258
+Epoch 2/9:LR: 0.01
+----------
+train Loss: 0.5252 Acc: 1.0000
+Epoch time taken:  0.29089856147766113
+val Loss: 0.3668 Acc: 1.0000
+Epoch time taken:  0.45046186447143555
+Epoch 3/9:LR: 0.01
+----------
+train Loss: 0.4457 Acc: 0.9643
+Epoch time taken:  0.27595019340515137
+val Loss: 0.2286 Acc: 1.0000
+Epoch time taken:  0.4379763603210449
+Epoch 4/9:LR: 0.01
+----------
+train Loss: 0.3022 Acc: 1.0000
+Epoch time taken:  0.27501583099365234
+val Loss: 0.1204 Acc: 1.0000
+Epoch time taken:  0.43434953689575195
+Epoch 5/9:LR: 0.01
+----------
+train Loss: 0.2690 Acc: 0.9643
+Epoch time taken:  0.2725811004638672
+val Loss: 0.0514 Acc: 1.0000
+Epoch time taken:  0.43366336822509766
+Epoch 6/9:LR: 0.01
+----------
+train Loss: 0.1383 Acc: 1.0000
+Epoch time taken:  0.2787797451019287
+val Loss: 0.0204 Acc: 1.0000
+Epoch time taken:  0.4401075839996338
+Epoch 7/9:LR: 0.01
+----------
+train Loss: 0.0930 Acc: 1.0000
+Epoch time taken:  0.279111385345459
+val Loss: 0.0091 Acc: 1.0000
+Epoch time taken:  0.43848705291748047
+Epoch 8/9:LR: 0.01
+----------
+train Loss: 0.0634 Acc: 1.0000
+Epoch time taken:  0.2745344638824463
+val Loss: 0.0042 Acc: 1.0000
+Epoch time taken:  0.4338984489440918
+Epoch 9/9:LR: 0.01
+----------
+train Loss: 0.0347 Acc: 1.0000
+Epoch time taken:  0.27477335929870605
+val Loss: 0.0025 Acc: 1.0000
+Epoch time taken:  0.43450021743774414
+Training complete in 0m 5s
+Best val Acc: 1.000000
+!!!!!!!!!!!!!!!!!!!!!!! Fold-8 !!!!!!!!!!!!!!!!!!!!
+cuda:1
+Epoch 0/9:LR: 0.01
+----------
+train Loss: 0.6952 Acc: 0.5357
+Epoch time taken:  0.27480220794677734
+val Loss: 0.6358 Acc: 1.0000
+Epoch time taken:  0.43927621841430664
+Epoch 1/9:LR: 0.01
+----------
+train Loss: 0.6042 Acc: 0.9286
+Epoch time taken:  0.32550930976867676
+val Loss: 0.5570 Acc: 1.0000
+Epoch time taken:  0.52852463722229
+Epoch 2/9:LR: 0.01
+----------
+train Loss: 0.5223 Acc: 1.0000
+Epoch time taken:  0.2952103614807129
+val Loss: 0.4495 Acc: 1.0000
+Epoch time taken:  0.4666168689727783
+Epoch 3/9:LR: 0.01
+----------
+train Loss: 0.4182 Acc: 0.9286
+Epoch time taken:  0.29213666915893555
+val Loss: 0.3264 Acc: 1.0000
+Epoch time taken:  0.45525121688842773
+Epoch 4/9:LR: 0.01
+----------
+train Loss: 0.3784 Acc: 0.8929
+Epoch time taken:  0.27750563621520996
+val Loss: 0.2354 Acc: 1.0000
+Epoch time taken:  0.43720102310180664
+Epoch 5/9:LR: 0.01
+----------
+train Loss: 0.1979 Acc: 1.0000
+Epoch time taken:  0.2767641544342041
+val Loss: 0.1447 Acc: 1.0000
+Epoch time taken:  0.43703532218933105
+Epoch 6/9:LR: 0.01
+----------
+train Loss: 0.2516 Acc: 0.9643
+Epoch time taken:  0.2765922546386719
+val Loss: 0.1075 Acc: 1.0000
+Epoch time taken:  0.43662214279174805
+Epoch 7/9:LR: 0.01
+----------
+train Loss: 0.1419 Acc: 0.9286
+Epoch time taken:  0.2773013114929199
+val Loss: 0.0893 Acc: 1.0000
+Epoch time taken:  0.4454655647277832
+Epoch 8/9:LR: 0.01
+----------
+train Loss: 0.0362 Acc: 1.0000
+Epoch time taken:  0.2953639030456543
+val Loss: 0.0646 Acc: 1.0000
+Epoch time taken:  0.45494627952575684
+Epoch 9/9:LR: 0.01
+----------
+train Loss: 0.0484 Acc: 1.0000
+Epoch time taken:  0.2744016647338867
+val Loss: 0.0555 Acc: 1.0000
+Epoch time taken:  0.43497514724731445
+Training complete in 0m 5s
+Best val Acc: 1.000000
+[tensor(1., device='cuda:1', dtype=torch.float64), tensor(1., device='cuda:1', dtype=torch.float64), tensor(1., device='cuda:1', dtype=torch.float64), tensor(1., device='cuda:1', dtype=torch.float64), tensor(1., device='cuda:1', dtype=torch.float64), tensor(1., device='cuda:1', dtype=torch.float64), tensor(1., device='cuda:1', dtype=torch.float64), tensor(1., device='cuda:1', dtype=torch.float64)]

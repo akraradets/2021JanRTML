@@ -13,6 +13,7 @@ class trainer():
         self._train_acc = []
         self._val_loss = []
         self._val_acc = []
+        self._best_val_acc = None
         self._init_folder()
 
     def _init_folder(self) -> None:
@@ -130,6 +131,7 @@ class trainer():
         time_elapsed = time.time() - since
         print('Training complete in {:.0f}m {:.0f}s'.format(time_elapsed // 60, time_elapsed % 60))
         print('Best val Acc: {:4f}'.format(best_acc))
+        self._best_val_acc = best_acc
         # load best model weights
         model.load_state_dict(best_model_wts)
         self.save(weights_name)
