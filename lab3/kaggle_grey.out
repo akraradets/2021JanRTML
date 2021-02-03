@@ -1,0 +1,191 @@
+cuda:1
+Epoch 0/29:LR: 0.01
+----------
+train Loss: 0.6838 Acc: 0.4167
+Epoch time taken:  0.23430442810058594
+val Loss: 0.6495 Acc: 0.8750
+Epoch time taken:  0.37461042404174805
+Epoch 1/29:LR: 0.01
+----------
+train Loss: 0.6305 Acc: 0.8333
+Epoch time taken:  0.257582426071167
+val Loss: 0.5882 Acc: 1.0000
+Epoch time taken:  0.40220046043395996
+Epoch 2/29:LR: 0.01
+----------
+train Loss: 0.5647 Acc: 0.9167
+Epoch time taken:  0.24144268035888672
+val Loss: 0.5150 Acc: 0.8750
+Epoch time taken:  0.41190433502197266
+Epoch 3/29:LR: 0.01
+----------
+train Loss: 0.4854 Acc: 0.9167
+Epoch time taken:  0.23369193077087402
+val Loss: 0.4272 Acc: 0.8750
+Epoch time taken:  0.3670969009399414
+Epoch 4/29:LR: 0.01
+----------
+train Loss: 0.4326 Acc: 1.0000
+Epoch time taken:  0.21892213821411133
+val Loss: 0.3329 Acc: 1.0000
+Epoch time taken:  0.34617090225219727
+Epoch 5/29:LR: 0.01
+----------
+train Loss: 0.2984 Acc: 0.9583
+Epoch time taken:  0.21736598014831543
+val Loss: 0.2563 Acc: 1.0000
+Epoch time taken:  0.3448641300201416
+Epoch 6/29:LR: 0.01
+----------
+train Loss: 0.2393 Acc: 0.9583
+Epoch time taken:  0.21849918365478516
+val Loss: 0.2010 Acc: 1.0000
+Epoch time taken:  0.3457653522491455
+Epoch 7/29:LR: 0.01
+----------
+train Loss: 0.2198 Acc: 0.9583
+Epoch time taken:  0.22148466110229492
+val Loss: 0.1587 Acc: 1.0000
+Epoch time taken:  0.3496124744415283
+Epoch 8/29:LR: 0.01
+----------
+train Loss: 0.2107 Acc: 0.8750
+Epoch time taken:  0.21821236610412598
+val Loss: 0.1041 Acc: 1.0000
+Epoch time taken:  0.34769582748413086
+Epoch 9/29:LR: 0.01
+----------
+train Loss: 0.1144 Acc: 1.0000
+Epoch time taken:  0.21858739852905273
+val Loss: 0.0818 Acc: 1.0000
+Epoch time taken:  0.34767842292785645
+Epoch 10/29:LR: 0.01
+----------
+train Loss: 0.1428 Acc: 0.9583
+Epoch time taken:  0.21900367736816406
+val Loss: 0.0579 Acc: 1.0000
+Epoch time taken:  0.36772727966308594
+Epoch 11/29:LR: 0.01
+----------
+train Loss: 0.0624 Acc: 1.0000
+Epoch time taken:  0.2184762954711914
+val Loss: 0.0371 Acc: 1.0000
+Epoch time taken:  0.3458540439605713
+Epoch 12/29:LR: 0.01
+----------
+train Loss: 0.0454 Acc: 1.0000
+Epoch time taken:  0.21823883056640625
+val Loss: 0.0280 Acc: 1.0000
+Epoch time taken:  0.3558518886566162
+Epoch 13/29:LR: 0.01
+----------
+train Loss: 0.1102 Acc: 1.0000
+Epoch time taken:  0.21835064888000488
+val Loss: 0.0202 Acc: 1.0000
+Epoch time taken:  0.3461458683013916
+Epoch 14/29:LR: 0.01
+----------
+train Loss: 0.0297 Acc: 1.0000
+Epoch time taken:  0.22297430038452148
+val Loss: 0.0163 Acc: 1.0000
+Epoch time taken:  0.3513681888580322
+Epoch 15/29:LR: 0.01
+----------
+train Loss: 0.0533 Acc: 1.0000
+Epoch time taken:  0.2201685905456543
+val Loss: 0.0174 Acc: 1.0000
+Epoch time taken:  0.35929298400878906
+Epoch 16/29:LR: 0.01
+----------
+train Loss: 0.0241 Acc: 1.0000
+Epoch time taken:  0.22072863578796387
+val Loss: 0.0151 Acc: 1.0000
+Epoch time taken:  0.3480992317199707
+Epoch 17/29:LR: 0.01
+----------
+train Loss: 0.0113 Acc: 1.0000
+Epoch time taken:  0.21834969520568848
+val Loss: 0.0108 Acc: 1.0000
+Epoch time taken:  0.34653162956237793
+Epoch 18/29:LR: 0.01
+----------
+train Loss: 0.0455 Acc: 1.0000
+Epoch time taken:  0.2218031883239746
+val Loss: 0.0067 Acc: 1.0000
+Epoch time taken:  0.3500199317932129
+Epoch 19/29:LR: 0.01
+----------
+train Loss: 0.0373 Acc: 1.0000
+Epoch time taken:  0.22810935974121094
+val Loss: 0.0060 Acc: 1.0000
+Epoch time taken:  0.35558009147644043
+Epoch 20/29:LR: 0.01
+----------
+train Loss: 0.0132 Acc: 1.0000
+Epoch time taken:  0.21913385391235352
+val Loss: 0.0074 Acc: 1.0000
+Epoch time taken:  0.3473246097564697
+Epoch 21/29:LR: 0.01
+----------
+train Loss: 0.0351 Acc: 1.0000
+Epoch time taken:  0.21901726722717285
+val Loss: 0.0047 Acc: 1.0000
+Epoch time taken:  0.3467738628387451
+Epoch 22/29:LR: 0.01
+----------
+train Loss: 0.0206 Acc: 1.0000
+Epoch time taken:  0.21889996528625488
+val Loss: 0.0031 Acc: 1.0000
+Epoch time taken:  0.3461759090423584
+Epoch 23/29:LR: 0.01
+----------
+train Loss: 0.0067 Acc: 1.0000
+Epoch time taken:  0.2203667163848877
+val Loss: 0.0029 Acc: 1.0000
+Epoch time taken:  0.3474445343017578
+Epoch 24/29:LR: 0.01
+----------
+train Loss: 0.0047 Acc: 1.0000
+Epoch time taken:  0.2192692756652832
+val Loss: 0.0024 Acc: 1.0000
+Epoch time taken:  0.3473939895629883
+Epoch 25/29:LR: 0.01
+----------
+train Loss: 0.0144 Acc: 1.0000
+Epoch time taken:  0.2287123203277588
+val Loss: 0.0021 Acc: 1.0000
+Epoch time taken:  0.3563833236694336
+Epoch 26/29:LR: 0.01
+----------
+train Loss: 0.0090 Acc: 1.0000
+Epoch time taken:  0.21869587898254395
+val Loss: 0.0016 Acc: 1.0000
+Epoch time taken:  0.3460690975189209
+Epoch 27/29:LR: 0.01
+----------
+train Loss: 0.0121 Acc: 1.0000
+Epoch time taken:  0.21921467781066895
+val Loss: 0.0013 Acc: 1.0000
+Epoch time taken:  0.3473062515258789
+Epoch 28/29:LR: 0.01
+----------
+train Loss: 0.0046 Acc: 1.0000
+Epoch time taken:  0.21794795989990234
+val Loss: 0.0012 Acc: 1.0000
+Epoch time taken:  0.34581637382507324
+Epoch 29/29:LR: 0.01
+----------
+train Loss: 0.0034 Acc: 1.0000
+Epoch time taken:  0.21899080276489258
+val Loss: 0.0011 Acc: 1.0000
+Epoch time taken:  0.3461124897003174
+Training complete in 0m 12s
+Best val Acc: 1.000000
+/usr/local/lib/python3.6/dist-packages/PIL/Image.py:963: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  "Palette images with Transparency expressed in bytes should be "
+/usr/local/lib/python3.6/dist-packages/PIL/Image.py:963: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  "Palette images with Transparency expressed in bytes should be "
+===== Testing =====
+Accuracy of the network on the 1988 test images: 58 %
+Accuracy of chihuahua : 14 %
+Accuracy of muffin : 95 %

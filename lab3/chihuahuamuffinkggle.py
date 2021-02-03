@@ -13,19 +13,21 @@ import numpy as np
 
 # Allow augmentation transform for training set, no augementation for val/test set
 # Normalize(mean, std, inplace=False)
-# mean, std = (0.5, 0.5, 0.5), (0.5, 0.5, 0.5)
-mean, std = (0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)
+mean, std = (0.5, 0.5, 0.5), (0.5, 0.5, 0.5)
+# mean, std = (0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)
 
 preprocess_augment = transforms.Compose([
     transforms.Resize(256),
     transforms.RandomCrop(224),
     transforms.RandomHorizontalFlip(),
+    transforms.Grayscale(num_output_channels=3),
     transforms.ToTensor(),
     transforms.Normalize(mean, std)])
 
 preprocess = transforms.Compose([
     transforms.Resize(256),
     transforms.CenterCrop(224),
+    transforms.Grayscale(num_output_channels=3),
     transforms.ToTensor(),
     transforms.Normalize(mean, std)])
 
