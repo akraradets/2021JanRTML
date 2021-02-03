@@ -148,11 +148,13 @@ class trainer():
         #Testing classification accuracy for individual classes.
         class_correct = np.zeros(10)
         class_total = np.zeros(10)
+        history = []
         with torch.no_grad():
             for data in dataloader:
                 images, labels = data[0].to(device), data[1].to(device)
                 # print(labels)
                 outputs = model(images)
+                history.append(outputs.data)
                 _, predicted = torch.max(outputs.data, 1)
                 total += labels.size(0)
                 correct += (predicted == labels).sum().item()
@@ -165,3 +167,4 @@ class trainer():
         print('Accuracy of the network on the',total,'test images: %d %%' % (100 * correct / total))
         for i in range(len(classes)):
             print('Accuracy of %5s : %2d %%' % (classes[i], 100 * class_correct[i] / class_total[i]))
+        return history
