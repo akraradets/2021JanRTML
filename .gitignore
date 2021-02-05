@@ -146,3 +146,6 @@ lab2/GoogleNet/*.pth
 lab3/data/*
 lab3/result*/*.pth
 lab3/core
+
+# Lab4 Ignore
+lab4/*/*.weights
