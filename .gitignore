@@ -149,3 +149,4 @@ lab3/core
 
 # Lab4 Ignore
 lab4/*/*.weights
+lab4/COCO/*
