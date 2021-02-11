@@ -18,7 +18,8 @@ RUN echo "en_US.UTF-8 UTF-8" > /etc/locale.gen \
 ENV LC_ALL en_US.UTF-8
 
 RUN apt-get install -y python3-pip git
-RUN pip3 install pytorch==1.2.0 torchvision==0.4.0 tensorboard==1.14 future
+RUN pip3 install wheel
+RUN pip3 install torch==1.2.0 torchvision==0.4.0 tensorboard==1.14 future
 # ==0.17.1
 RUN pip3 install numpy ipykernel matplotlib
 
