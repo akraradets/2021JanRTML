@@ -11,7 +11,7 @@ from util import *
 
 def get_test_input():
     img = cv2.imread("dog-cycle-car.png")
-    img = cv2.resize(img, (416,416))          #Resize to the input dimension
+    img = cv2.resize(img, (608,608))          #Resize to the input dimension
     img_ =  img[:,:,::-1].transpose((2,0,1))  # BGR -> RGB | H X W C -> C X H X W 
     img_ = img_[np.newaxis,:,:,:]/255.0       #Add a channel at 0 (for batch) | Normalise
     img_ = torch.from_numpy(img_).float()     #Convert to float
@@ -129,7 +129,6 @@ def create_modules(blocks):
             elif activation == "linear":
                 activn = LinearActivation()
                 module.add_module("linear_{0}".format(index), activn)
-                
             else:
                 raise ValueError(f"No activation:{activation}")
         
@@ -181,19 +180,11 @@ def create_modules(blocks):
     
             detection = DetectionLayer(anchors)
             module.add_module("Detection_{}".format(index), detection)
-        # elif x["type"] == "maxpool":
-        #     # {'type': 'maxpool', 'stride': '1', 'size': '5'}
-        #     assert int(x['size']) % 2
-        #     maxpool = nn.MaxPool2d(kernel_size=int(x['size']), stride=int(x['stride']), padding=int(x['size']) // 2)
-        #     module.add_module("maxpool_{0}".format(index), maxpool)
         elif x["type"] == "maxpool":
-            stride = int(x["stride"])
-            size = int(x["size"])
-            assert size % 2
-            maxpool = nn.MaxPool2d(kernel_size=size, stride=stride, padding=size // 2)
+            # {'type': 'maxpool', 'stride': '1', 'size': '5'}
+            assert int(x['size']) % 2
+            maxpool = nn.MaxPool2d(kernel_size=int(x['size']), stride=int(x['stride']), padding=int(x['size']) // 2)
             module.add_module("maxpool_{0}".format(index), maxpool)
-            
-
         else:
             print(x)
             raise ValueError(f"Module:{x['type']} not defined")
