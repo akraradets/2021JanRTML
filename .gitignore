@@ -150,3 +150,6 @@ lab3/core
 # Lab4 Ignore
 lab4/*/*.weights
 lab4/COCO/*
+
+# Lab5 Ignore
+lab5/yolov4 - train/*.weights
