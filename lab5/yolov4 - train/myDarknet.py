@@ -125,7 +125,7 @@ class MyDarknet(nn.Module):
 
                 if(stage == 0): continue
             
-            print(self.blocks[i + 1])
+            # print(self.blocks[i + 1])
             # Load weight
             if module_type == "convolutional":
                 model = self.module_list[i]
