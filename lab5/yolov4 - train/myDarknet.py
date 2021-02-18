@@ -64,7 +64,7 @@ class MyDarknet(nn.Module):
                 num_classes = int (module["classes"])
         
                 #Transform 
-                x = x.data
+                # x = x.data
                 # predict_transform is in util.py
                 x = predict_transform(x, inp_dim, anchors, num_classes, CUDA)
                 if not write:              #if no collector has been intialised. 

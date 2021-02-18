@@ -464,5 +464,3 @@ def calculate_APs(iou_threshold, batches, targets):
     # 80 classes
     # print(target)
     # for i in range(0, 80):
-
-            
