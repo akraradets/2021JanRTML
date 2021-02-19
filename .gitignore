@@ -154,3 +154,6 @@ lab4/COCO/*
 # Lab5 Ignore
 lab5/yolov4 - train/*.weights
 lab4/yolov4 - train/COCO/*
+
+# Lab6 Ignore
+lab6/resnet101-5d3b4d8f.pth
