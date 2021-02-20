@@ -1,0 +1,40 @@
+FROM pytorch/pytorch:0.4.1-cuda9-cudnn7-devel
+ENV http_proxy http://192.41.170.23:3128
+ENV https_proxy http://192.41.170.23:3128
+
+RUN apt-get update && apt-get upgrade -y && apt-get install -y openssh-server
+RUN mkdir /var/run/sshd
+RUN mkdir /root/.ssh/
+EXPOSE 22
+
+# set the locale to en_US.UTF-8
+RUN apt-get install -y locales
+ENV DEBIAN_FRONTEND noninteractive
+RUN echo "en_US.UTF-8 UTF-8" > /etc/locale.gen \
+    && locale-gen en_US.UTF-8 \
+    && dpkg-reconfigure locales \
+    && /usr/sbin/update-locale LANG=en_US.UTF-8
+ENV LC_ALL en_US.UTF-8
+
+RUN apt-get install -y python3-pip git vim
+RUN pip3 install wheel
+# RUN pip3 install torch==1.2.0 torchvision==0.4.0 tensorboard==1.14 future
+# ==0.17.1
+# RUN pip3 install numpy ipykernel matplotlib pandas
+
+# If you use /root from the image, we need to set the proxy in .bashrc.
+# If we mount /root from the host filesystem, this is not necessary.
+# Instead, make sure the .bashrc in the directory that you mount as /root
+# contains the correct proxy settings.
+
+RUN echo "export https_proxy=http://192.41.170.23:3128" >> /root/.bashrc
+RUN echo "export http_proxy=http://192.41.170.23:3128" >> /root/.bashrc
+
+# If we mount /root from the host filesystem, this is NOT necessary.
+# Instead, make sure the .ssh/authorized_keys file in the directory that
+# you mount as /root contains the SSH public key you'll use to log in to the container.
+
+COPY bazooka.pub /root/.ssh/authorized_keys
+
+# CMD ["/usr/sbin/sshd", "-D"]
+CMD chown -R root /root ; /usr/sbin/sshd -D
