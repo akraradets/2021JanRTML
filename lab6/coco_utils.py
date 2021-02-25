@@ -247,7 +247,7 @@ def get_coco(root, image_set, transforms, mode='instances'):
 
     return dataset
 
-def get_city(transforms, mode='instances'):
+def get_city(image_set,transforms, mode='instances'):
     # instancesonly_filtered_gtFine_val
     # anno_file_template = "{}_{}2017.json"
     # PATHS = {
@@ -271,10 +271,12 @@ def get_city(transforms, mode='instances'):
     # ann_file = os.path.join(root, ann_file)
     img_folder = './Cityscapes/'
     ann_file = './Cityscapes/annotations/instancesonly_filtered_gtFine_val.json'
+    if(image_set == 'train'):
+        ann_file = './Cityscapes/annotations/instancesonly_filtered_gtFine_train.json'
     dataset = CocoDetection(img_folder, ann_file, transforms=transforms)
 
-    # if image_set == "train":
-    #     dataset = _coco_remove_images_without_annotations(dataset)
+    if image_set == "train":
+        dataset = _coco_remove_images_without_annotations(dataset)
 
     # dataset = torch.utils.data.Subset(dataset, [i for i in range(500)])
 
