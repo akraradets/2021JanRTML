@@ -157,3 +157,6 @@ lab4/yolov4 - train/COCO/*
 
 # Lab6 Ignore
 lab6/*/*.pth
+lab6/gtFine_trainvaltest.zip
+lab6/cookies.txt
+lab6/index.html
