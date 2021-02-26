@@ -1,0 +1,13 @@
+Files already downloaded and verified
+Figure(1600x1600)
+Epoch: [0/30], Batch Num: [0/500]
+Discriminator Loss: 1.3855, Generator Loss: 0.7079
+D(x): 0.5011, D(G(z)): 0.5007
+Figure(1600x1600)
+Epoch: [0/30], Batch Num: [100/500]
+Discriminator Loss: 1.1021, Generator Loss: 2.0453
+D(x): 0.6657, D(G(z)): 0.4407
+Figure(1600x1600)
+Epoch: [0/30], Batch Num: [200/500]
+Discriminator Loss: 0.1129, Generator Loss: 3.9717
+D(x): 0.9316, D(G(z)): 0.0377

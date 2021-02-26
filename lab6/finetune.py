@@ -35,7 +35,7 @@ val_dataloader = torch.utils.data.DataLoader(coco_val_dataset, batch_size=4, shu
 
 
 
-device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 print(device)
 model.to(device)
 
