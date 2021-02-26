@@ -160,3 +160,8 @@ lab6/*/*.pth
 lab6/data/*
 lab6/cookies.txt
 lab6/index.html
+
+# Lab7 Ignore
+lab7/torch_data/*
+lab7/data/*
+lab7/runs/*

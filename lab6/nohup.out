@@ -1,0 +1,75 @@
+Loading pretrained model...
+Loading COCO train, val datasets...
+loading annotations into memory...
+Done (t=3.59s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.63s)
+creating index...
+index created!
+cuda:1
+=========== 0 ===========
+Epoch: [0]  [  0/742]  eta: 0:34:19  lr: 0.000012  loss: 1.1186 (1.1186)  loss_classifier: 0.2832 (0.2832)  loss_box_reg: 0.1765 (0.1765)  loss_mask: 0.3413 (0.3413)  loss_objectness: 0.0367 (0.0367)  loss_rpn_box_reg: 0.2809 (0.2809)  time: 2.7749  data: 1.0622  max mem: 0
+Epoch: [0]  [500/742]  eta: 0:06:03  lr: 0.003382  loss: 1.0313 (1.0993)  loss_classifier: 0.2396 (0.2705)  loss_box_reg: 0.1730 (0.1637)  loss_mask: 0.3105 (0.3097)  loss_objectness: 0.0466 (0.0699)  loss_rpn_box_reg: 0.3044 (0.2855)  time: 1.5260  data: 0.7790  max mem: 0
+Epoch: [0]  [741/742]  eta: 0:00:01  lr: 0.005000  loss: 1.0668 (1.0736)  loss_classifier: 0.2588 (0.2557)  loss_box_reg: 0.1700 (0.1608)  loss_mask: 0.3044 (0.3060)  loss_objectness: 0.0574 (0.0666)  loss_rpn_box_reg: 0.2530 (0.2845)  time: 1.5043  data: 0.7611  max mem: 0
+Epoch: [0] Total time: 0:18:34 (1.5024 s / it)
+Test:  [  0/125]  eta: 0:11:23  model_time: 1.1680 (1.1680)  evaluator_time: 2.5413 (2.5413)  time: 5.4688  data: 1.6510  max mem: 0
+Test:  [100/125]  eta: 0:02:13  model_time: 1.0994 (1.1142)  evaluator_time: 2.4757 (2.4931)  time: 5.3555  data: 1.6767  max mem: 0
+Test:  [124/125]  eta: 0:00:05  model_time: 0.6173 (1.0569)  evaluator_time: 1.0408 (2.3236)  time: 3.2983  data: 1.0296  max mem: 0
+Test: Total time: 0:10:25 (5.0034 s / it)
+Averaged stats: model_time: 0.6173 (1.0569)  evaluator_time: 1.0408 (2.3236)
+Accumulating evaluation results...
+DONE (t=1.66s).
+Accumulating evaluation results...
+DONE (t=0.53s).
+IoU metric: bbox
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.266
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.468
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.252
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.077
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.292
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.461
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.207
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.356
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.384
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.113
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.389
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.627
+IoU metric: segm
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.213
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.401
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.199
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.022
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.185
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.423
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.195
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.301
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.317
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.058
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.296
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.559
+=========== 1 ===========
+Epoch: [1]  [  0/742]  eta: 0:18:45  lr: 0.005000  loss: 1.1227 (1.1227)  loss_classifier: 0.2382 (0.2382)  loss_box_reg: 0.1348 (0.1348)  loss_mask: 0.2709 (0.2709)  loss_objectness: 0.0553 (0.0553)  loss_rpn_box_reg: 0.4234 (0.4234)  time: 1.5162  data: 0.7435  max mem: 0
+Traceback (most recent call last):
+  File "finetune.py", line 53, in <module>
+    train_one_epoch(model, optimizer, train_dataloader, device, epoch, print_freq=500)
+  File "/root/RTML/2021JanRTML/lab6/engine.py", line 26, in train_one_epoch
+    for images, targets in metric_logger.log_every(data_loader, print_freq, header):
+  File "/root/RTML/2021JanRTML/lab6/utils.py", line 209, in log_every
+    for obj in iterable:
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 346, in __next__
+    data = self.dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataset.py", line 256, in __getitem__
+    return self.dataset[self.indices[idx]]
+  File "/root/RTML/2021JanRTML/lab6/coco_utils.py", line 215, in __getitem__
+    img, target = super(CocoDetection, self).__getitem__(idx)
+  File "/usr/local/lib/python3.6/dist-packages/torchvision/datasets/coco.py", line 116, in __getitem__
+    img = Image.open(os.path.join(self.root, path)).convert('RGB')
+  File "/usr/local/lib/python3.6/dist-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './Cityscapes/gtFine/leftImg8bit/train/dusseldorf/dusseldorf_000093_000019_leftImg8bit.png'

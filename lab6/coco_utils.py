@@ -269,7 +269,7 @@ def get_city(image_set,transforms, mode='instances'):
     # img_folder, ann_file = PATHS[image_set]
     # img_folder = os.path.join(root, img_folder)
     # ann_file = os.path.join(root, ann_file)
-    img_folder = './Cityscapes/'
+    img_folder = './Cityscapes/gtFine/'
     ann_file = './Cityscapes/annotations/instancesonly_filtered_gtFine_val.json'
     if(image_set == 'train'):
         ann_file = './Cityscapes/annotations/instancesonly_filtered_gtFine_train.json'
