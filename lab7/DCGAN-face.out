@@ -3,3 +3,583 @@ Figure(1600x1600)
 Epoch: [0/100], Batch Num: [0/2026]
 Discriminator Loss: 1.3837, Generator Loss: 0.7116
 D(x): 0.5007, D(G(z)): 0.4994
+Figure(1600x1600)
+Epoch: [0/100], Batch Num: [100/2026]
+Discriminator Loss: 0.0428, Generator Loss: 4.3550
+D(x): 0.9816, D(G(z)): 0.0237
+Figure(1600x1600)
+Epoch: [0/100], Batch Num: [200/2026]
+Discriminator Loss: 0.0056, Generator Loss: 5.8731
+D(x): 0.9978, D(G(z)): 0.0034
+Figure(1600x1600)
+Epoch: [0/100], Batch Num: [300/2026]
+Discriminator Loss: 0.0023, Generator Loss: 6.7292
+D(x): 0.9990, D(G(z)): 0.0014
+Figure(1600x1600)
+Epoch: [0/100], Batch Num: [400/2026]
+Discriminator Loss: 0.0014, Generator Loss: 7.0670
+D(x): 0.9995, D(G(z)): 0.0010
+Figure(1600x1600)
+Epoch: [0/100], Batch Num: [500/2026]
+Discriminator Loss: 0.0008, Generator Loss: 7.5923
+D(x): 0.9997, D(G(z)): 0.0005
+Figure(1600x1600)
+Epoch: [0/100], Batch Num: [600/2026]
+Discriminator Loss: 0.0007, Generator Loss: 7.7483
+D(x): 0.9997, D(G(z)): 0.0005
+Figure(1600x1600)
+Epoch: [0/100], Batch Num: [700/2026]
+Discriminator Loss: 0.0005, Generator Loss: 8.2534
+D(x): 0.9998, D(G(z)): 0.0003
+Figure(1600x1600)
+Epoch: [0/100], Batch Num: [800/2026]
+Discriminator Loss: 0.0003, Generator Loss: 8.6146
+D(x): 0.9998, D(G(z)): 0.0002
+Figure(1600x1600)
+Epoch: [0/100], Batch Num: [900/2026]
+Discriminator Loss: 0.0003, Generator Loss: 8.9172
+D(x): 0.9999, D(G(z)): 0.0001
+Figure(1600x1600)
+Epoch: [0/100], Batch Num: [1000/2026]
+Discriminator Loss: 0.0002, Generator Loss: 8.7780
+D(x): 0.9999, D(G(z)): 0.0002
+Figure(1600x1600)
+Epoch: [0/100], Batch Num: [1100/2026]
+Discriminator Loss: 0.0002, Generator Loss: 8.9882
+D(x): 0.9999, D(G(z)): 0.0001
+Figure(1600x1600)
+Epoch: [0/100], Batch Num: [1200/2026]
+Discriminator Loss: 0.0001, Generator Loss: 9.3105
+D(x): 0.9999, D(G(z)): 0.0001
+Figure(1600x1600)
+Epoch: [0/100], Batch Num: [1300/2026]
+Discriminator Loss: 0.0001, Generator Loss: 9.4807
+D(x): 0.9999, D(G(z)): 0.0001
+Figure(1600x1600)
+Epoch: [0/100], Batch Num: [1400/2026]
+Discriminator Loss: 0.0001, Generator Loss: 9.6654
+D(x): 1.0000, D(G(z)): 0.0001
+Figure(1600x1600)
+Epoch: [0/100], Batch Num: [1500/2026]
+Discriminator Loss: 0.0001, Generator Loss: 9.7826
+D(x): 1.0000, D(G(z)): 0.0001
+Figure(1600x1600)
+Epoch: [0/100], Batch Num: [1600/2026]
+Discriminator Loss: 0.0001, Generator Loss: 9.9137
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [0/100], Batch Num: [1700/2026]
+Discriminator Loss: 0.0001, Generator Loss: 10.0122
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [0/100], Batch Num: [1800/2026]
+Discriminator Loss: 0.0001, Generator Loss: 10.2326
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [0/100], Batch Num: [1900/2026]
+Discriminator Loss: 0.0001, Generator Loss: 10.4133
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [0/100], Batch Num: [2000/2026]
+Discriminator Loss: 0.0000, Generator Loss: 10.5388
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [1/100], Batch Num: [0/2026]
+Discriminator Loss: 0.0000, Generator Loss: 10.5699
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [1/100], Batch Num: [100/2026]
+Discriminator Loss: 0.0000, Generator Loss: 10.6503
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [1/100], Batch Num: [200/2026]
+Discriminator Loss: 0.0000, Generator Loss: 10.6518
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [1/100], Batch Num: [300/2026]
+Discriminator Loss: 0.0000, Generator Loss: 10.6302
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [1/100], Batch Num: [400/2026]
+Discriminator Loss: 0.0000, Generator Loss: 10.6715
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [1/100], Batch Num: [500/2026]
+Discriminator Loss: 0.0000, Generator Loss: 10.8298
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [1/100], Batch Num: [600/2026]
+Discriminator Loss: 0.0000, Generator Loss: 10.9470
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [1/100], Batch Num: [700/2026]
+Discriminator Loss: 0.0000, Generator Loss: 10.9906
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [1/100], Batch Num: [800/2026]
+Discriminator Loss: 0.0000, Generator Loss: 11.1467
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [1/100], Batch Num: [900/2026]
+Discriminator Loss: 0.0000, Generator Loss: 11.2870
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [1/100], Batch Num: [1000/2026]
+Discriminator Loss: 0.0000, Generator Loss: 11.3969
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [1/100], Batch Num: [1100/2026]
+Discriminator Loss: 0.0000, Generator Loss: 11.4324
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [1/100], Batch Num: [1200/2026]
+Discriminator Loss: 0.0000, Generator Loss: 11.2403
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [1/100], Batch Num: [1300/2026]
+Discriminator Loss: 0.0000, Generator Loss: 11.3987
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [1/100], Batch Num: [1400/2026]
+Discriminator Loss: 0.0000, Generator Loss: 11.5955
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [1/100], Batch Num: [1500/2026]
+Discriminator Loss: 0.0000, Generator Loss: 11.7396
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [1/100], Batch Num: [1600/2026]
+Discriminator Loss: 0.0000, Generator Loss: 11.8336
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [1/100], Batch Num: [1700/2026]
+Discriminator Loss: 0.0000, Generator Loss: 11.8977
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [1/100], Batch Num: [1800/2026]
+Discriminator Loss: 0.0000, Generator Loss: 11.9856
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [1/100], Batch Num: [1900/2026]
+Discriminator Loss: 0.0000, Generator Loss: 12.0675
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [1/100], Batch Num: [2000/2026]
+Discriminator Loss: 0.0000, Generator Loss: 12.1385
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [2/100], Batch Num: [0/2026]
+Discriminator Loss: 0.0000, Generator Loss: 12.1563
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [2/100], Batch Num: [100/2026]
+Discriminator Loss: 0.0000, Generator Loss: 12.1998
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [2/100], Batch Num: [200/2026]
+Discriminator Loss: 0.0000, Generator Loss: 12.1876
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [2/100], Batch Num: [300/2026]
+Discriminator Loss: 0.0000, Generator Loss: 12.2313
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [2/100], Batch Num: [400/2026]
+Discriminator Loss: 0.0000, Generator Loss: 12.3266
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [2/100], Batch Num: [500/2026]
+Discriminator Loss: 0.0000, Generator Loss: 12.4252
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [2/100], Batch Num: [600/2026]
+Discriminator Loss: 0.0000, Generator Loss: 12.4854
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [2/100], Batch Num: [700/2026]
+Discriminator Loss: 0.0000, Generator Loss: 12.5194
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [2/100], Batch Num: [800/2026]
+Discriminator Loss: 0.0000, Generator Loss: 12.5915
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [2/100], Batch Num: [900/2026]
+Discriminator Loss: 0.0000, Generator Loss: 12.7155
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [2/100], Batch Num: [1000/2026]
+Discriminator Loss: 0.0000, Generator Loss: 12.8186
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [2/100], Batch Num: [1100/2026]
+Discriminator Loss: 0.0000, Generator Loss: 12.9100
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [2/100], Batch Num: [1200/2026]
+Discriminator Loss: 0.0000, Generator Loss: 12.9834
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [2/100], Batch Num: [1300/2026]
+Discriminator Loss: 0.0000, Generator Loss: 13.0353
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [2/100], Batch Num: [1400/2026]
+Discriminator Loss: 0.0000, Generator Loss: 13.0846
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [2/100], Batch Num: [1500/2026]
+Discriminator Loss: 0.0000, Generator Loss: 13.1025
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [2/100], Batch Num: [1600/2026]
+Discriminator Loss: 0.0000, Generator Loss: 12.9877
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [2/100], Batch Num: [1700/2026]
+Discriminator Loss: 0.0000, Generator Loss: 12.8604
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [2/100], Batch Num: [1800/2026]
+Discriminator Loss: 0.0000, Generator Loss: 13.0956
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [2/100], Batch Num: [1900/2026]
+Discriminator Loss: 0.0000, Generator Loss: 13.2753
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [2/100], Batch Num: [2000/2026]
+Discriminator Loss: 0.0000, Generator Loss: 13.3940
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [3/100], Batch Num: [0/2026]
+Discriminator Loss: 0.0000, Generator Loss: 13.4088
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [3/100], Batch Num: [100/2026]
+Discriminator Loss: 0.0000, Generator Loss: 13.4378
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [3/100], Batch Num: [200/2026]
+Discriminator Loss: 0.0000, Generator Loss: 13.3780
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [3/100], Batch Num: [300/2026]
+Discriminator Loss: 0.0000, Generator Loss: 13.4011
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [3/100], Batch Num: [400/2026]
+Discriminator Loss: 0.0000, Generator Loss: 13.4759
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [3/100], Batch Num: [500/2026]
+Discriminator Loss: 0.0000, Generator Loss: 13.5930
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [3/100], Batch Num: [600/2026]
+Discriminator Loss: 0.0000, Generator Loss: 13.7020
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [3/100], Batch Num: [700/2026]
+Discriminator Loss: 0.0000, Generator Loss: 13.7507
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [3/100], Batch Num: [800/2026]
+Discriminator Loss: 0.0000, Generator Loss: 13.8050
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [3/100], Batch Num: [900/2026]
+Discriminator Loss: 0.0000, Generator Loss: 13.8457
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [3/100], Batch Num: [1000/2026]
+Discriminator Loss: 0.0000, Generator Loss: 13.9442
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [3/100], Batch Num: [1100/2026]
+Discriminator Loss: 0.0000, Generator Loss: 14.0490
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [3/100], Batch Num: [1200/2026]
+Discriminator Loss: 0.0000, Generator Loss: 14.1409
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [3/100], Batch Num: [1300/2026]
+Discriminator Loss: 0.0000, Generator Loss: 14.2203
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [3/100], Batch Num: [1400/2026]
+Discriminator Loss: 0.0000, Generator Loss: 14.2912
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [3/100], Batch Num: [1500/2026]
+Discriminator Loss: 0.0000, Generator Loss: 14.3512
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [3/100], Batch Num: [1600/2026]
+Discriminator Loss: 0.0000, Generator Loss: 14.3999
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [3/100], Batch Num: [1700/2026]
+Discriminator Loss: 0.0000, Generator Loss: 14.4562
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [3/100], Batch Num: [1800/2026]
+Discriminator Loss: 0.0000, Generator Loss: 14.5119
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [3/100], Batch Num: [1900/2026]
+Discriminator Loss: 0.0000, Generator Loss: 14.5700
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [3/100], Batch Num: [2000/2026]
+Discriminator Loss: 0.0000, Generator Loss: 14.6288
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [4/100], Batch Num: [0/2026]
+Discriminator Loss: 0.0000, Generator Loss: 14.6430
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [4/100], Batch Num: [100/2026]
+Discriminator Loss: 0.0000, Generator Loss: 14.6793
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [4/100], Batch Num: [200/2026]
+Discriminator Loss: 0.0000, Generator Loss: 14.6630
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [4/100], Batch Num: [300/2026]
+Discriminator Loss: 0.0000, Generator Loss: 14.6359
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [4/100], Batch Num: [400/2026]
+Discriminator Loss: 0.0000, Generator Loss: 14.6480
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [4/100], Batch Num: [500/2026]
+Discriminator Loss: 0.0000, Generator Loss: 14.7050
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [4/100], Batch Num: [600/2026]
+Discriminator Loss: 0.0000, Generator Loss: 14.7738
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [4/100], Batch Num: [700/2026]
+Discriminator Loss: 0.0000, Generator Loss: 14.8454
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [4/100], Batch Num: [800/2026]
+Discriminator Loss: 0.0000, Generator Loss: 14.9140
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [4/100], Batch Num: [900/2026]
+Discriminator Loss: 0.0000, Generator Loss: 14.9854
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [4/100], Batch Num: [1000/2026]
+Discriminator Loss: 0.0000, Generator Loss: 15.0461
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [4/100], Batch Num: [1100/2026]
+Discriminator Loss: 0.0000, Generator Loss: 15.1017
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [4/100], Batch Num: [1200/2026]
+Discriminator Loss: 0.0000, Generator Loss: 15.1574
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [4/100], Batch Num: [1300/2026]
+Discriminator Loss: 0.0000, Generator Loss: 15.2178
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [4/100], Batch Num: [1400/2026]
+Discriminator Loss: 0.0000, Generator Loss: 15.2777
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [4/100], Batch Num: [1500/2026]
+Discriminator Loss: 0.0000, Generator Loss: 15.3402
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [4/100], Batch Num: [1600/2026]
+Discriminator Loss: 0.0000, Generator Loss: 15.4098
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [4/100], Batch Num: [1700/2026]
+Discriminator Loss: 0.0000, Generator Loss: 15.4769
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [4/100], Batch Num: [1800/2026]
+Discriminator Loss: 0.0000, Generator Loss: 15.5404
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [4/100], Batch Num: [1900/2026]
+Discriminator Loss: 0.0000, Generator Loss: 15.5941
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [4/100], Batch Num: [2000/2026]
+Discriminator Loss: 0.0000, Generator Loss: 15.6436
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [5/100], Batch Num: [0/2026]
+Discriminator Loss: 0.0000, Generator Loss: 15.6554
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [5/100], Batch Num: [100/2026]
+Discriminator Loss: 0.0000, Generator Loss: 15.6966
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [5/100], Batch Num: [200/2026]
+Discriminator Loss: 0.0000, Generator Loss: 15.7403
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [5/100], Batch Num: [300/2026]
+Discriminator Loss: 0.0000, Generator Loss: 15.7773
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [5/100], Batch Num: [400/2026]
+Discriminator Loss: 0.0000, Generator Loss: 15.7937
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [5/100], Batch Num: [500/2026]
+Discriminator Loss: 0.0000, Generator Loss: 15.7979
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [5/100], Batch Num: [600/2026]
+Discriminator Loss: 0.0000, Generator Loss: 15.8419
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [5/100], Batch Num: [700/2026]
+Discriminator Loss: 0.0000, Generator Loss: 15.9066
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [5/100], Batch Num: [800/2026]
+Discriminator Loss: 0.0000, Generator Loss: 15.9856
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [5/100], Batch Num: [900/2026]
+Discriminator Loss: 0.0000, Generator Loss: 16.0613
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [5/100], Batch Num: [1000/2026]
+Discriminator Loss: 0.0000, Generator Loss: 16.1299
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [5/100], Batch Num: [1100/2026]
+Discriminator Loss: 0.0000, Generator Loss: 16.1965
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [5/100], Batch Num: [1200/2026]
+Discriminator Loss: 0.0000, Generator Loss: 16.2596
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [5/100], Batch Num: [1300/2026]
+Discriminator Loss: 0.0000, Generator Loss: 16.3139
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [5/100], Batch Num: [1400/2026]
+Discriminator Loss: 0.0000, Generator Loss: 16.3477
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [5/100], Batch Num: [1500/2026]
+Discriminator Loss: 0.0000, Generator Loss: 16.3610
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [5/100], Batch Num: [1600/2026]
+Discriminator Loss: 0.0000, Generator Loss: 16.3812
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [5/100], Batch Num: [1700/2026]
+Discriminator Loss: 0.0000, Generator Loss: 16.4202
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [5/100], Batch Num: [1800/2026]
+Discriminator Loss: 0.0000, Generator Loss: 16.4684
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [5/100], Batch Num: [1900/2026]
+Discriminator Loss: 0.0000, Generator Loss: 16.5281
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [5/100], Batch Num: [2000/2026]
+Discriminator Loss: 0.0000, Generator Loss: 16.5900
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [6/100], Batch Num: [0/2026]
+Discriminator Loss: 0.0000, Generator Loss: 16.6071
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [6/100], Batch Num: [100/2026]
+Discriminator Loss: 0.0000, Generator Loss: 16.6695
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [6/100], Batch Num: [200/2026]
+Discriminator Loss: 0.0000, Generator Loss: 16.7345
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [6/100], Batch Num: [300/2026]
+Discriminator Loss: 0.0000, Generator Loss: 16.7982
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [6/100], Batch Num: [400/2026]
+Discriminator Loss: 0.0000, Generator Loss: 16.8589
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [6/100], Batch Num: [500/2026]
+Discriminator Loss: 0.0000, Generator Loss: 16.9265
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [6/100], Batch Num: [600/2026]
+Discriminator Loss: 0.0000, Generator Loss: 16.9893
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [6/100], Batch Num: [700/2026]
+Discriminator Loss: 0.0000, Generator Loss: 17.0452
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [6/100], Batch Num: [800/2026]
+Discriminator Loss: 0.0000, Generator Loss: 17.1023
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [6/100], Batch Num: [900/2026]
+Discriminator Loss: 0.0000, Generator Loss: 17.1587
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [6/100], Batch Num: [1000/2026]
+Discriminator Loss: 0.0000, Generator Loss: 17.2179
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [6/100], Batch Num: [1100/2026]
+Discriminator Loss: 0.0000, Generator Loss: 17.2764
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [6/100], Batch Num: [1200/2026]
+Discriminator Loss: 0.0000, Generator Loss: 17.3309
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [6/100], Batch Num: [1300/2026]
+Discriminator Loss: 0.0000, Generator Loss: 17.3819
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [6/100], Batch Num: [1400/2026]
+Discriminator Loss: 0.0000, Generator Loss: 17.4354
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [6/100], Batch Num: [1500/2026]
+Discriminator Loss: 0.0000, Generator Loss: 17.4867
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [6/100], Batch Num: [1600/2026]
+Discriminator Loss: 0.0000, Generator Loss: 17.5343
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [6/100], Batch Num: [1700/2026]
+Discriminator Loss: 0.0000, Generator Loss: 17.5798
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [6/100], Batch Num: [1800/2026]
+Discriminator Loss: 0.0000, Generator Loss: 17.6212
+D(x): 1.0000, D(G(z)): 0.0000
+Figure(1600x1600)
+Epoch: [6/100], Batch Num: [1900/2026]
+Discriminator Loss: 0.0000, Generator Loss: 17.6463
+D(x): 1.0000, D(G(z)): 0.0000
