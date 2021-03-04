@@ -1,4 +1,4 @@
-FROM pytorch/pytorch:1.7.1-cuda11.0-cudnn8-runtime
+FROM nvidia/cuda:11.0.3-cudnn8-devel-ubuntu20.04
 ENV http_proxy http://192.41.170.23:3128
 ENV https_proxy http://192.41.170.23:3128
 
