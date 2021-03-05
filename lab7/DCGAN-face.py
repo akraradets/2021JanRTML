@@ -175,16 +175,15 @@ def noise(batchSize):
 
 
 
-DATA_FOLDER = './torch_data/DCGAN/CelebA'
 def face_data():
     compose = transforms.Compose(
         [
-            transforms.Resize(64),
+            transforms.Resize((64,64)),
             transforms.ToTensor(),
             transforms.Normalize((.5, .5, .5), (.5, .5, .5))
         ])
-    out_dir = '{}/dataset'.format(DATA_FOLDER)
-    return datasets.CelebA(root=out_dir, split='all', transform=compose, download=True)
+    DATA_FOLDER = 'torch_data/DCGAN/ait/'
+    return datasets.ImageFolder(DATA_FOLDER, transform=compose)
     
 data = face_data()
 data_loader = torch.utils.data.DataLoader(data, batch_size=100, shuffle=True)
@@ -225,16 +224,15 @@ g_optimizer = optim.Adam(generator.parameters(), lr=0.0002, betas=(0.5, 0.999))
 loss = nn.BCELoss()
 
 # Number of epochs of training
-num_epochs = 100
+num_epochs = 10000
 
 num_test_samples = 16
 test_noise = noise(num_test_samples)
 
-logger = Logger(model_name='DCGAN', data_name='FACE')
+logger = Logger(model_name='DCGAN', data_name='AITICT')
 
 for epoch in range(num_epochs):
     for n_batch, (real_data,_) in enumerate(data_loader):
-
         # Train Discriminator
         
         # if torch.cuda.is_available(): 

@@ -165,3 +165,6 @@ lab6/index.html
 lab7/torch_data/*
 lab7/data/*
 lab7/runs/*
+lab7/runs-archive/*
+
+lab8/*.zip

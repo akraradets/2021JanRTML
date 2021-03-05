@@ -1,0 +1,400 @@
+Figure(1600x1600)
+Epoch: [0/100], Batch Num: [0/4]
+Discriminator Loss: 1.3869, Generator Loss: 0.7061
+D(x): 0.4994, D(G(z)): 0.4997
+Figure(1600x1600)
+Epoch: [1/100], Batch Num: [0/4]
+Discriminator Loss: 1.2324, Generator Loss: 0.7334
+D(x): 0.5790, D(G(z)): 0.4962
+Figure(1600x1600)
+Epoch: [2/100], Batch Num: [0/4]
+Discriminator Loss: 1.0743, Generator Loss: 0.8552
+D(x): 0.6285, D(G(z)): 0.4560
+Figure(1600x1600)
+Epoch: [3/100], Batch Num: [0/4]
+Discriminator Loss: 0.8841, Generator Loss: 1.0605
+D(x): 0.6727, D(G(z)): 0.3847
+Figure(1600x1600)
+Epoch: [4/100], Batch Num: [0/4]
+Discriminator Loss: 0.6710, Generator Loss: 1.3178
+D(x): 0.7313, D(G(z)): 0.2992
+Figure(1600x1600)
+Epoch: [5/100], Batch Num: [0/4]
+Discriminator Loss: 0.4855, Generator Loss: 1.5789
+D(x): 0.7986, D(G(z)): 0.2285
+Figure(1600x1600)
+Epoch: [6/100], Batch Num: [0/4]
+Discriminator Loss: 0.3684, Generator Loss: 1.8395
+D(x): 0.8393, D(G(z)): 0.1751
+Figure(1600x1600)
+Epoch: [7/100], Batch Num: [0/4]
+Discriminator Loss: 0.2751, Generator Loss: 2.0956
+D(x): 0.8787, D(G(z)): 0.1353
+Figure(1600x1600)
+Epoch: [8/100], Batch Num: [0/4]
+Discriminator Loss: 0.2157, Generator Loss: 2.3466
+D(x): 0.9027, D(G(z)): 0.1068
+Figure(1600x1600)
+Epoch: [9/100], Batch Num: [0/4]
+Discriminator Loss: 0.1675, Generator Loss: 2.5844
+D(x): 0.9235, D(G(z)): 0.0839
+Figure(1600x1600)
+Epoch: [10/100], Batch Num: [0/4]
+Discriminator Loss: 0.1317, Generator Loss: 2.7934
+D(x): 0.9395, D(G(z)): 0.0669
+Figure(1600x1600)
+Epoch: [11/100], Batch Num: [0/4]
+Discriminator Loss: 0.1248, Generator Loss: 2.9702
+D(x): 0.9404, D(G(z)): 0.0608
+Figure(1600x1600)
+Epoch: [12/100], Batch Num: [0/4]
+Discriminator Loss: 0.0903, Generator Loss: 3.1419
+D(x): 0.9588, D(G(z)): 0.0470
+Figure(1600x1600)
+Epoch: [13/100], Batch Num: [0/4]
+Discriminator Loss: 0.0778, Generator Loss: 3.2960
+D(x): 0.9646, D(G(z)): 0.0408
+Figure(1600x1600)
+Epoch: [14/100], Batch Num: [0/4]
+Discriminator Loss: 0.0658, Generator Loss: 3.4394
+D(x): 0.9705, D(G(z)): 0.0351
+Figure(1600x1600)
+Epoch: [15/100], Batch Num: [0/4]
+Discriminator Loss: 0.0576, Generator Loss: 3.5880
+D(x): 0.9740, D(G(z)): 0.0308
+Figure(1600x1600)
+Epoch: [16/100], Batch Num: [0/4]
+Discriminator Loss: 0.0496, Generator Loss: 3.7606
+D(x): 0.9767, D(G(z)): 0.0256
+Figure(1600x1600)
+Epoch: [17/100], Batch Num: [0/4]
+Discriminator Loss: 0.0439, Generator Loss: 3.8858
+D(x): 0.9799, D(G(z)): 0.0232
+Figure(1600x1600)
+Epoch: [18/100], Batch Num: [0/4]
+Discriminator Loss: 0.0488, Generator Loss: 3.8547
+D(x): 0.9807, D(G(z)): 0.0287
+Figure(1600x1600)
+Epoch: [19/100], Batch Num: [0/4]
+Discriminator Loss: 1.4173, Generator Loss: 0.9848
+D(x): 0.3028, D(G(z)): 0.0880
+Figure(1600x1600)
+Epoch: [20/100], Batch Num: [0/4]
+Discriminator Loss: 0.6046, Generator Loss: 1.9878
+D(x): 0.7057, D(G(z)): 0.1873
+Figure(1600x1600)
+Epoch: [21/100], Batch Num: [0/4]
+Discriminator Loss: 0.8280, Generator Loss: 2.3294
+D(x): 0.6772, D(G(z)): 0.3368
+Figure(1600x1600)
+Epoch: [22/100], Batch Num: [0/4]
+Discriminator Loss: 0.8481, Generator Loss: 2.8529
+D(x): 0.7258, D(G(z)): 0.3963
+Figure(1600x1600)
+Epoch: [23/100], Batch Num: [0/4]
+Discriminator Loss: 0.6244, Generator Loss: 2.1575
+D(x): 0.6726, D(G(z)): 0.1785
+Figure(1600x1600)
+Epoch: [24/100], Batch Num: [0/4]
+Discriminator Loss: 0.6657, Generator Loss: 2.5047
+D(x): 0.6880, D(G(z)): 0.2301
+Figure(1600x1600)
+Epoch: [25/100], Batch Num: [0/4]
+Discriminator Loss: 0.5030, Generator Loss: 1.9869
+D(x): 0.7086, D(G(z)): 0.1087
+Figure(1600x1600)
+Epoch: [26/100], Batch Num: [0/4]
+Discriminator Loss: 0.6992, Generator Loss: 2.9471
+D(x): 0.9061, D(G(z)): 0.4188
+Figure(1600x1600)
+Epoch: [27/100], Batch Num: [0/4]
+Discriminator Loss: 0.6825, Generator Loss: 2.1597
+D(x): 0.5652, D(G(z)): 0.0397
+Figure(1600x1600)
+Epoch: [28/100], Batch Num: [0/4]
+Discriminator Loss: 0.3468, Generator Loss: 3.7042
+D(x): 0.9133, D(G(z)): 0.2085
+Figure(1600x1600)
+Epoch: [29/100], Batch Num: [0/4]
+Discriminator Loss: 0.3531, Generator Loss: 3.8431
+D(x): 0.9327, D(G(z)): 0.2346
+Figure(1600x1600)
+Epoch: [30/100], Batch Num: [0/4]
+Discriminator Loss: 0.2301, Generator Loss: 3.2989
+D(x): 0.8492, D(G(z)): 0.0549
+Figure(1600x1600)
+Epoch: [31/100], Batch Num: [0/4]
+Discriminator Loss: 2.0410, Generator Loss: 1.6226
+D(x): 0.1916, D(G(z)): 0.0711
+Figure(1600x1600)
+Epoch: [32/100], Batch Num: [0/4]
+Discriminator Loss: 0.7689, Generator Loss: 1.8446
+D(x): 0.6594, D(G(z)): 0.2634
+Figure(1600x1600)
+Epoch: [33/100], Batch Num: [0/4]
+Discriminator Loss: 0.7910, Generator Loss: 3.9071
+D(x): 0.8984, D(G(z)): 0.4697
+Figure(1600x1600)
+Epoch: [34/100], Batch Num: [0/4]
+Discriminator Loss: 0.5386, Generator Loss: 2.0081
+D(x): 0.7308, D(G(z)): 0.1762
+Figure(1600x1600)
+Epoch: [35/100], Batch Num: [0/4]
+Discriminator Loss: 1.9984, Generator Loss: 1.7577
+D(x): 0.1701, D(G(z)): 0.0459
+Figure(1600x1600)
+Epoch: [36/100], Batch Num: [0/4]
+Discriminator Loss: 0.5874, Generator Loss: 2.3159
+D(x): 0.7579, D(G(z)): 0.2535
+Figure(1600x1600)
+Epoch: [37/100], Batch Num: [0/4]
+Discriminator Loss: 0.4428, Generator Loss: 3.3426
+D(x): 0.8457, D(G(z)): 0.2224
+Figure(1600x1600)
+Epoch: [38/100], Batch Num: [0/4]
+Discriminator Loss: 0.5586, Generator Loss: 1.8158
+D(x): 0.8857, D(G(z)): 0.3295
+Figure(1600x1600)
+Epoch: [39/100], Batch Num: [0/4]
+Discriminator Loss: 1.0117, Generator Loss: 2.0536
+D(x): 0.4249, D(G(z)): 0.0481
+Figure(1600x1600)
+Epoch: [40/100], Batch Num: [0/4]
+Discriminator Loss: 0.6001, Generator Loss: 3.5424
+D(x): 0.9236, D(G(z)): 0.3800
+Figure(1600x1600)
+Epoch: [41/100], Batch Num: [0/4]
+Discriminator Loss: 0.3277, Generator Loss: 2.5374
+D(x): 0.8489, D(G(z)): 0.1428
+Figure(1600x1600)
+Epoch: [42/100], Batch Num: [0/4]
+Discriminator Loss: 1.1667, Generator Loss: 2.2446
+D(x): 0.3621, D(G(z)): 0.0392
+Figure(1600x1600)
+Epoch: [43/100], Batch Num: [0/4]
+Discriminator Loss: 0.3093, Generator Loss: 2.5282
+D(x): 0.8503, D(G(z)): 0.1297
+Figure(1600x1600)
+Epoch: [44/100], Batch Num: [0/4]
+Discriminator Loss: 1.5536, Generator Loss: 2.6203
+D(x): 0.2580, D(G(z)): 0.0223
+Figure(1600x1600)
+Epoch: [45/100], Batch Num: [0/4]
+Discriminator Loss: 0.3472, Generator Loss: 2.1688
+D(x): 0.7895, D(G(z)): 0.0935
+Figure(1600x1600)
+Epoch: [46/100], Batch Num: [0/4]
+Discriminator Loss: 0.3983, Generator Loss: 3.4284
+D(x): 0.8113, D(G(z)): 0.1461
+Figure(1600x1600)
+Epoch: [47/100], Batch Num: [0/4]
+Discriminator Loss: 0.9249, Generator Loss: 3.4660
+D(x): 0.9528, D(G(z)): 0.5366
+Figure(1600x1600)
+Epoch: [48/100], Batch Num: [0/4]
+Discriminator Loss: 0.5199, Generator Loss: 2.3367
+D(x): 0.7007, D(G(z)): 0.1125
+Figure(1600x1600)
+Epoch: [49/100], Batch Num: [0/4]
+Discriminator Loss: 1.0984, Generator Loss: 2.1311
+D(x): 0.3983, D(G(z)): 0.0324
+Figure(1600x1600)
+Epoch: [50/100], Batch Num: [0/4]
+Discriminator Loss: 0.3163, Generator Loss: 3.3405
+D(x): 0.9245, D(G(z)): 0.2018
+Figure(1600x1600)
+Epoch: [51/100], Batch Num: [0/4]
+Discriminator Loss: 0.3813, Generator Loss: 2.3953
+D(x): 0.7607, D(G(z)): 0.0800
+Figure(1600x1600)
+Epoch: [52/100], Batch Num: [0/4]
+Discriminator Loss: 0.4594, Generator Loss: 2.7853
+D(x): 0.8565, D(G(z)): 0.2406
+Figure(1600x1600)
+Epoch: [53/100], Batch Num: [0/4]
+Discriminator Loss: 1.0741, Generator Loss: 1.8134
+D(x): 0.8825, D(G(z)): 0.5667
+Figure(1600x1600)
+Epoch: [54/100], Batch Num: [0/4]
+Discriminator Loss: 0.5606, Generator Loss: 1.6947
+D(x): 0.6582, D(G(z)): 0.0903
+Figure(1600x1600)
+Epoch: [55/100], Batch Num: [0/4]
+Discriminator Loss: 0.5950, Generator Loss: 2.7237
+D(x): 0.7378, D(G(z)): 0.2248
+Figure(1600x1600)
+Epoch: [56/100], Batch Num: [0/4]
+Discriminator Loss: 0.5114, Generator Loss: 3.4653
+D(x): 0.8790, D(G(z)): 0.3010
+Figure(1600x1600)
+Epoch: [57/100], Batch Num: [0/4]
+Discriminator Loss: 0.3777, Generator Loss: 2.9515
+D(x): 0.8280, D(G(z)): 0.1593
+Figure(1600x1600)
+Epoch: [58/100], Batch Num: [0/4]
+Discriminator Loss: 2.9944, Generator Loss: 3.2413
+D(x): 0.0720, D(G(z)): 0.0084
+Figure(1600x1600)
+Epoch: [59/100], Batch Num: [0/4]
+Discriminator Loss: 0.5985, Generator Loss: 2.3142
+D(x): 0.6829, D(G(z)): 0.1558
+Figure(1600x1600)
+Epoch: [60/100], Batch Num: [0/4]
+Discriminator Loss: 0.9712, Generator Loss: 3.4448
+D(x): 0.8469, D(G(z)): 0.4956
+Figure(1600x1600)
+Epoch: [61/100], Batch Num: [0/4]
+Discriminator Loss: 0.2831, Generator Loss: 2.1220
+D(x): 0.8622, D(G(z)): 0.1174
+Figure(1600x1600)
+Epoch: [62/100], Batch Num: [0/4]
+Discriminator Loss: 0.3722, Generator Loss: 3.4900
+D(x): 0.8870, D(G(z)): 0.2119
+Figure(1600x1600)
+Epoch: [63/100], Batch Num: [0/4]
+Discriminator Loss: 1.5364, Generator Loss: 4.6800
+D(x): 0.9644, D(G(z)): 0.7524
+Figure(1600x1600)
+Epoch: [64/100], Batch Num: [0/4]
+Discriminator Loss: 0.4605, Generator Loss: 2.8167
+D(x): 0.8712, D(G(z)): 0.2608
+Figure(1600x1600)
+Epoch: [65/100], Batch Num: [0/4]
+Discriminator Loss: 0.5927, Generator Loss: 3.4008
+D(x): 0.8265, D(G(z)): 0.2997
+Figure(1600x1600)
+Epoch: [66/100], Batch Num: [0/4]
+Discriminator Loss: 0.8557, Generator Loss: 3.3345
+D(x): 0.9282, D(G(z)): 0.5039
+Figure(1600x1600)
+Epoch: [67/100], Batch Num: [0/4]
+Discriminator Loss: 0.6137, Generator Loss: 1.5755
+D(x): 0.6236, D(G(z)): 0.0729
+Figure(1600x1600)
+Epoch: [68/100], Batch Num: [0/4]
+Discriminator Loss: 0.8441, Generator Loss: 2.9327
+D(x): 0.8974, D(G(z)): 0.4925
+Figure(1600x1600)
+Epoch: [69/100], Batch Num: [0/4]
+Discriminator Loss: 0.3940, Generator Loss: 2.8757
+D(x): 0.7875, D(G(z)): 0.1182
+Figure(1600x1600)
+Epoch: [70/100], Batch Num: [0/4]
+Discriminator Loss: 1.9131, Generator Loss: 1.0218
+D(x): 0.2003, D(G(z)): 0.0172
+Figure(1600x1600)
+Epoch: [71/100], Batch Num: [0/4]
+Discriminator Loss: 0.4298, Generator Loss: 2.5869
+D(x): 0.7830, D(G(z)): 0.1429
+Figure(1600x1600)
+Epoch: [72/100], Batch Num: [0/4]
+Discriminator Loss: 0.5716, Generator Loss: 1.2396
+D(x): 0.6297, D(G(z)): 0.0597
+Figure(1600x1600)
+Epoch: [73/100], Batch Num: [0/4]
+Discriminator Loss: 0.6265, Generator Loss: 2.9248
+D(x): 0.9229, D(G(z)): 0.3827
+Figure(1600x1600)
+Epoch: [74/100], Batch Num: [0/4]
+Discriminator Loss: 0.4260, Generator Loss: 2.3889
+D(x): 0.7710, D(G(z)): 0.1292
+Figure(1600x1600)
+Epoch: [75/100], Batch Num: [0/4]
+Discriminator Loss: 0.3856, Generator Loss: 2.8739
+D(x): 0.7506, D(G(z)): 0.0653
+Figure(1600x1600)
+Epoch: [76/100], Batch Num: [0/4]
+Discriminator Loss: 1.2045, Generator Loss: 4.6211
+D(x): 0.9653, D(G(z)): 0.6564
+Figure(1600x1600)
+Epoch: [77/100], Batch Num: [0/4]
+Discriminator Loss: 0.4846, Generator Loss: 3.3565
+D(x): 0.7964, D(G(z)): 0.2048
+Figure(1600x1600)
+Epoch: [78/100], Batch Num: [0/4]
+Discriminator Loss: 0.4551, Generator Loss: 2.6491
+D(x): 0.9296, D(G(z)): 0.2781
+Figure(1600x1600)
+Epoch: [79/100], Batch Num: [0/4]
+Discriminator Loss: 1.3929, Generator Loss: 2.1718
+D(x): 0.2927, D(G(z)): 0.0226
+Figure(1600x1600)
+Epoch: [80/100], Batch Num: [0/4]
+Discriminator Loss: 0.5899, Generator Loss: 3.2894
+D(x): 0.9095, D(G(z)): 0.3596
+Figure(1600x1600)
+Epoch: [81/100], Batch Num: [0/4]
+Discriminator Loss: 0.4645, Generator Loss: 3.2651
+D(x): 0.9016, D(G(z)): 0.2805
+Figure(1600x1600)
+Epoch: [82/100], Batch Num: [0/4]
+Discriminator Loss: 0.4317, Generator Loss: 2.2320
+D(x): 0.7601, D(G(z)): 0.1184
+Figure(1600x1600)
+Epoch: [83/100], Batch Num: [0/4]
+Discriminator Loss: 1.0143, Generator Loss: 0.8861
+D(x): 0.4423, D(G(z)): 0.0652
+Figure(1600x1600)
+Epoch: [84/100], Batch Num: [0/4]
+Discriminator Loss: 0.5792, Generator Loss: 3.5470
+D(x): 0.8787, D(G(z)): 0.3232
+Figure(1600x1600)
+Epoch: [85/100], Batch Num: [0/4]
+Discriminator Loss: 0.4159, Generator Loss: 2.2032
+D(x): 0.8391, D(G(z)): 0.1946
+Figure(1600x1600)
+Epoch: [86/100], Batch Num: [0/4]
+Discriminator Loss: 0.3451, Generator Loss: 2.8426
+D(x): 0.7843, D(G(z)): 0.0750
+Figure(1600x1600)
+Epoch: [87/100], Batch Num: [0/4]
+Discriminator Loss: 1.5919, Generator Loss: 2.1156
+D(x): 0.2624, D(G(z)): 0.0221
+Figure(1600x1600)
+Epoch: [88/100], Batch Num: [0/4]
+Discriminator Loss: 0.8236, Generator Loss: 3.5036
+D(x): 0.9186, D(G(z)): 0.4775
+Figure(1600x1600)
+Epoch: [89/100], Batch Num: [0/4]
+Discriminator Loss: 1.2545, Generator Loss: 4.2874
+D(x): 0.9618, D(G(z)): 0.6612
+Figure(1600x1600)
+Epoch: [90/100], Batch Num: [0/4]
+Discriminator Loss: 0.4549, Generator Loss: 2.8506
+D(x): 0.7152, D(G(z)): 0.0790
+Figure(1600x1600)
+Epoch: [91/100], Batch Num: [0/4]
+Discriminator Loss: 0.8288, Generator Loss: 4.3126
+D(x): 0.9399, D(G(z)): 0.5022
+Figure(1600x1600)
+Epoch: [92/100], Batch Num: [0/4]
+Discriminator Loss: 0.3448, Generator Loss: 3.1278
+D(x): 0.8576, D(G(z)): 0.1549
+Figure(1600x1600)
+Epoch: [93/100], Batch Num: [0/4]
+Discriminator Loss: 1.3282, Generator Loss: 3.6429
+D(x): 0.9664, D(G(z)): 0.6939
+Figure(1600x1600)
+Epoch: [94/100], Batch Num: [0/4]
+Discriminator Loss: 0.4984, Generator Loss: 2.2038
+D(x): 0.6791, D(G(z)): 0.0651
+Figure(1600x1600)
+Epoch: [95/100], Batch Num: [0/4]
+Discriminator Loss: 0.4533, Generator Loss: 3.0053
+D(x): 0.7067, D(G(z)): 0.0677
+Figure(1600x1600)
+Epoch: [96/100], Batch Num: [0/4]
+Discriminator Loss: 0.4593, Generator Loss: 1.7990
+D(x): 0.7162, D(G(z)): 0.0861
+Figure(1600x1600)
+Epoch: [97/100], Batch Num: [0/4]
+Discriminator Loss: 0.2785, Generator Loss: 3.7624
+D(x): 0.9029, D(G(z)): 0.1542
+Figure(1600x1600)
+Epoch: [98/100], Batch Num: [0/4]
+Discriminator Loss: 0.4884, Generator Loss: 2.0559
+D(x): 0.6813, D(G(z)): 0.0706
+Figure(1600x1600)
+Epoch: [99/100], Batch Num: [0/4]
+Discriminator Loss: 0.6215, Generator Loss: 2.0523
+D(x): 0.6044, D(G(z)): 0.0404
