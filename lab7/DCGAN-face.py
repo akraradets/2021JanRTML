@@ -13,7 +13,7 @@ class DiscriminativeNet(torch.nn.Module):
         
         self.conv1 = nn.Sequential(
             nn.Conv2d(
-                in_channels=3, out_channels=128, kernel_size=4, 
+                in_channels=1, out_channels=128, kernel_size=4, 
                 stride=2, padding=1, bias=False
             ),
             nn.LeakyReLU(0.2, inplace=True)
@@ -91,7 +91,7 @@ class GenerativeNet(torch.nn.Module):
         )
         self.conv4 = nn.Sequential(
             nn.ConvTranspose2d(
-                in_channels=128, out_channels=3, kernel_size=4,
+                in_channels=128, out_channels=1, kernel_size=4,
                 stride=2, padding=1, bias=False
             )
         )
@@ -179,6 +179,7 @@ def face_data():
     compose = transforms.Compose(
         [
             transforms.Resize((64,64)),
+            transforms.Grayscale(num_output_channels=1),
             transforms.ToTensor(),
             transforms.Normalize((.5, .5, .5), (.5, .5, .5))
         ])

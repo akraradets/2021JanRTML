@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "DCGAN-face.py", line 236, in <module>
+    for n_batch, (real_data,_) in enumerate(data_loader):
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 346, in __next__
+    data = self.dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/usr/local/lib/python3.6/dist-packages/torchvision/datasets/folder.py", line 140, in __getitem__
+    sample = self.transform(sample)
+  File "/usr/local/lib/python3.6/dist-packages/torchvision/transforms/transforms.py", line 61, in __call__
+    img = t(img)
+  File "/usr/local/lib/python3.6/dist-packages/torchvision/transforms/transforms.py", line 166, in __call__
+    return F.normalize(tensor, self.mean, self.std, self.inplace)
+  File "/usr/local/lib/python3.6/dist-packages/torchvision/transforms/functional.py", line 217, in normalize
+    tensor.sub_(mean[:, None, None]).div_(std[:, None, None])
+RuntimeError: output with shape [1, 64, 64] doesn't match the broadcast shape [3, 64, 64]
