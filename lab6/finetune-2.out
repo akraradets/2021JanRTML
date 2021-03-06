@@ -11,3 +11,4 @@ index created!
 cuda:0
 =========== 0 ===========
 Epoch: [0]  [  0/742]  eta: 0:19:48  lr: 0.000012  loss: 1.4248 (1.4248)  loss_classifier: 0.4689 (0.4689)  loss_box_reg: 0.2320 (0.2320)  loss_mask: 0.3176 (0.3176)  loss_objectness: 0.1682 (0.1682)  loss_rpn_box_reg: 0.2381 (0.2381)  time: 1.6017  data: 0.7513  max mem: 7066
+Epoch: [0]  [500/742]  eta: 0:06:05  lr: 0.003382  loss: 1.0039 (1.0872)  loss_classifier: 0.2264 (0.2687)  loss_box_reg: 0.1734 (0.1612)  loss_mask: 0.3074 (0.3073)  loss_objectness: 0.0428 (0.0678)  loss_rpn_box_reg: 0.2805 (0.2822)  time: 1.7307  data: 0.9714  max mem: 7588
