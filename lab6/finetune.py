@@ -31,7 +31,7 @@ def collate_fn(batch):
     return tuple(zip(*batch))
 
 train_dataloader = torch.utils.data.DataLoader(coco_train_dataset, batch_size=4, shuffle=True, num_workers=0, collate_fn=collate_fn)
-val_dataloader = torch.utils.data.DataLoader(coco_val_dataset, batch_size=4, shuffle=False, num_workers=0, collate_fn=collate_fn)
+val_dataloader = torch.utils.data.DataLoader(coco_val_dataset, batch_size=2, shuffle=False, num_workers=0, collate_fn=collate_fn)
 
 
 
@@ -40,16 +40,27 @@ print(device)
 model.to(device)
 
 from engine import train_one_epoch, evaluate
-import utils
+from mask_util import prediction_to_mask_image
+from matplotlib import pyplot as plt
+
 # Training
 params = [p for p in model.parameters() if p.requires_grad]
 optimizer = torch.optim.SGD(params, lr=0.005, momentum=0.9, weight_decay=0.0005)
 # and a learning rate scheduler
 lr_scheduler = torch.optim.lr_scheduler.StepLR(optimizer,step_size=3,gamma=0.1)
-num_epochs = 10
+num_epochs = 100
 for epoch in range(num_epochs):
     # train for one epoch, printing every 10 iterations
     print(f"=========== {epoch} ===========")
+    # Save Image
+    model.eval()
+    images, targets = next(iter(val_dataloader))
+    images = [img.to(device) for img in images]
+    predictions = model(images)
+    masked_img = prediction_to_mask_image(images, predictions, 0, 0.5)
+    plt.imsave(f'./mask_results/epoch-{epoch}.jpg',masked_img)
+    torch.save(model.state_dict(), (f'checkpoints/maskrcnn-{epoch}.pth'))
+
     train_one_epoch(model, optimizer, train_dataloader, device, epoch, print_freq=500)
     lr_scheduler.step()
     evaluate(model, val_dataloader, device=device)
