@@ -181,7 +181,7 @@ def face_data():
             transforms.Resize((64,64)),
             transforms.Grayscale(num_output_channels=1),
             transforms.ToTensor(),
-            transforms.Normalize((.5, .5, .5), (.5, .5, .5))
+            transforms.Normalize([.5], [.5] )
         ])
     DATA_FOLDER = 'torch_data/DCGAN/ait/'
     return datasets.ImageFolder(DATA_FOLDER, transform=compose)
