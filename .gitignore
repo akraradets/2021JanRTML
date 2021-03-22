@@ -172,3 +172,5 @@ lab7/runs-archive/*
 lab7/runs-ict-color/*
 
 lab8/*.zip
+
+torch_data/*
