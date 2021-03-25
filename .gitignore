@@ -173,6 +173,15 @@ lab7/runs-ict-color/*
 
 lab8/*.zip
 
-lab9/result*
+lab9/result*/*
+!lab9/results_mnist_sgd/reconstruction_150.png
+!lab9/results_mnist_sgd/sample_150.png
+!lab9/results_mnist_adam/reconstruction_50.png
+!lab9/results_mnist_adam/sample_50.png
+!lab9/results_mnist_adam_0001/reconstruction_150.png
+!lab9/results_mnist_adam_0001/sample_150.png
+!lab9/results_adam_l001_b10000/reconstruction_500.png
+!lab9/results_adam_l001_b10000/sample_500.png
+
 
 torch_data/*
