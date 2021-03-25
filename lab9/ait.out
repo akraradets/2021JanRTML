@@ -1,0 +1,603 @@
+cuda:1
+to_device
+Optimizer
+Train Epoch: 1 [0/254 (0%)]	Loss: 11288.167969
+Train Epoch: 1 [200/254 (79%)]	Loss: 7570.034180
+====> Epoch: 1 Average loss: 7781.0719
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 7343.3352
+save image: results/sample_1.png
+Train Epoch: 2 [0/254 (0%)]	Loss: 7065.825684
+Train Epoch: 2 [200/254 (79%)]	Loss: 7620.281738
+====> Epoch: 2 Average loss: 7015.0903
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 7061.1891
+save image: results/sample_2.png
+Train Epoch: 3 [0/254 (0%)]	Loss: 6684.270020
+Train Epoch: 3 [200/254 (79%)]	Loss: 7214.635742
+====> Epoch: 3 Average loss: 6917.6245
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6935.1636
+save image: results/sample_3.png
+Train Epoch: 4 [0/254 (0%)]	Loss: 7186.448730
+Train Epoch: 4 [200/254 (79%)]	Loss: 6873.098633
+====> Epoch: 4 Average loss: 6828.9596
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6858.6036
+save image: results/sample_4.png
+Train Epoch: 5 [0/254 (0%)]	Loss: 7331.750977
+Train Epoch: 5 [200/254 (79%)]	Loss: 6746.473145
+====> Epoch: 5 Average loss: 6776.0360
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6823.7774
+save image: results/sample_5.png
+Train Epoch: 6 [0/254 (0%)]	Loss: 6247.580078
+Train Epoch: 6 [200/254 (79%)]	Loss: 6886.977539
+====> Epoch: 6 Average loss: 6734.8154
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6810.9053
+save image: results/sample_6.png
+Train Epoch: 7 [0/254 (0%)]	Loss: 6500.557617
+Train Epoch: 7 [200/254 (79%)]	Loss: 5958.789551
+====> Epoch: 7 Average loss: 6704.7820
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6773.1646
+save image: results/sample_7.png
+Train Epoch: 8 [0/254 (0%)]	Loss: 6186.538574
+Train Epoch: 8 [200/254 (79%)]	Loss: 6369.839844
+====> Epoch: 8 Average loss: 6662.4572
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6729.5231
+save image: results/sample_8.png
+Train Epoch: 9 [0/254 (0%)]	Loss: 6403.459473
+Train Epoch: 9 [200/254 (79%)]	Loss: 6457.140137
+====> Epoch: 9 Average loss: 6647.2254
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6714.8964
+save image: results/sample_9.png
+Train Epoch: 10 [0/254 (0%)]	Loss: 6842.439453
+Train Epoch: 10 [200/254 (79%)]	Loss: 7201.460449
+====> Epoch: 10 Average loss: 6607.3754
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6716.2606
+save image: results/sample_10.png
+Train Epoch: 11 [0/254 (0%)]	Loss: 6412.555176
+Train Epoch: 11 [200/254 (79%)]	Loss: 6605.267090
+====> Epoch: 11 Average loss: 6580.3567
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6670.6454
+save image: results/sample_11.png
+Train Epoch: 12 [0/254 (0%)]	Loss: 6396.267578
+Train Epoch: 12 [200/254 (79%)]	Loss: 6066.972168
+====> Epoch: 12 Average loss: 6568.6181
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6679.3241
+save image: results/sample_12.png
+Train Epoch: 13 [0/254 (0%)]	Loss: 6413.223633
+Train Epoch: 13 [200/254 (79%)]	Loss: 6303.020996
+====> Epoch: 13 Average loss: 6547.6121
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6677.4125
+save image: results/sample_13.png
+Train Epoch: 14 [0/254 (0%)]	Loss: 7050.625977
+Train Epoch: 14 [200/254 (79%)]	Loss: 6243.819824
+====> Epoch: 14 Average loss: 6530.9044
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6654.8611
+save image: results/sample_14.png
+Train Epoch: 15 [0/254 (0%)]	Loss: 6860.948242
+Train Epoch: 15 [200/254 (79%)]	Loss: 6662.145020
+====> Epoch: 15 Average loss: 6525.5627
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6688.8867
+save image: results/sample_15.png
+Train Epoch: 16 [0/254 (0%)]	Loss: 6358.279297
+Train Epoch: 16 [200/254 (79%)]	Loss: 6426.630371
+====> Epoch: 16 Average loss: 6506.5345
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6632.8587
+save image: results/sample_16.png
+Train Epoch: 17 [0/254 (0%)]	Loss: 6899.762207
+Train Epoch: 17 [200/254 (79%)]	Loss: 5874.697266
+====> Epoch: 17 Average loss: 6502.2945
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6635.7664
+save image: results/sample_17.png
+Train Epoch: 18 [0/254 (0%)]	Loss: 6579.506348
+Train Epoch: 18 [200/254 (79%)]	Loss: 6077.629883
+====> Epoch: 18 Average loss: 6487.9728
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6629.7999
+save image: results/sample_18.png
+Train Epoch: 19 [0/254 (0%)]	Loss: 6934.229492
+Train Epoch: 19 [200/254 (79%)]	Loss: 6475.375488
+====> Epoch: 19 Average loss: 6477.1150
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6607.1143
+save image: results/sample_19.png
+Train Epoch: 20 [0/254 (0%)]	Loss: 6140.322754
+Train Epoch: 20 [200/254 (79%)]	Loss: 6130.161621
+====> Epoch: 20 Average loss: 6466.4053
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6610.9981
+save image: results/sample_20.png
+Train Epoch: 21 [0/254 (0%)]	Loss: 6773.059082
+Train Epoch: 21 [200/254 (79%)]	Loss: 6362.258301
+====> Epoch: 21 Average loss: 6457.9606
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6636.8121
+save image: results/sample_21.png
+Train Epoch: 22 [0/254 (0%)]	Loss: 6043.565430
+Train Epoch: 22 [200/254 (79%)]	Loss: 6407.586426
+====> Epoch: 22 Average loss: 6451.4728
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6617.9281
+save image: results/sample_22.png
+Train Epoch: 23 [0/254 (0%)]	Loss: 6317.400391
+Train Epoch: 23 [200/254 (79%)]	Loss: 6325.437500
+====> Epoch: 23 Average loss: 6439.9218
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6610.8063
+save image: results/sample_23.png
+Train Epoch: 24 [0/254 (0%)]	Loss: 6409.364258
+Train Epoch: 24 [200/254 (79%)]	Loss: 6633.694336
+====> Epoch: 24 Average loss: 6430.0228
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6599.7739
+save image: results/sample_24.png
+Train Epoch: 25 [0/254 (0%)]	Loss: 7261.738281
+Train Epoch: 25 [200/254 (79%)]	Loss: 6579.308105
+====> Epoch: 25 Average loss: 6418.6346
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6603.0394
+save image: results/sample_25.png
+Train Epoch: 26 [0/254 (0%)]	Loss: 5720.897461
+Train Epoch: 26 [200/254 (79%)]	Loss: 6369.520020
+====> Epoch: 26 Average loss: 6414.7486
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6593.3021
+save image: results/sample_26.png
+Train Epoch: 27 [0/254 (0%)]	Loss: 5801.478027
+Train Epoch: 27 [200/254 (79%)]	Loss: 7106.729004
+====> Epoch: 27 Average loss: 6402.8591
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6590.6121
+save image: results/sample_27.png
+Train Epoch: 28 [0/254 (0%)]	Loss: 6545.661133
+Train Epoch: 28 [200/254 (79%)]	Loss: 6057.481934
+====> Epoch: 28 Average loss: 6394.3104
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6600.4648
+save image: results/sample_28.png
+Train Epoch: 29 [0/254 (0%)]	Loss: 6290.361816
+Train Epoch: 29 [200/254 (79%)]	Loss: 5769.733398
+====> Epoch: 29 Average loss: 6391.2655
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6586.6972
+save image: results/sample_29.png
+Train Epoch: 30 [0/254 (0%)]	Loss: 6818.878418
+Train Epoch: 30 [200/254 (79%)]	Loss: 6413.926270
+====> Epoch: 30 Average loss: 6381.3447
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6587.6531
+save image: results/sample_30.png
+Train Epoch: 31 [0/254 (0%)]	Loss: 6178.677246
+Train Epoch: 31 [200/254 (79%)]	Loss: 5929.773926
+====> Epoch: 31 Average loss: 6373.9863
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6585.1511
+save image: results/sample_31.png
+Train Epoch: 32 [0/254 (0%)]	Loss: 6102.462402
+Train Epoch: 32 [200/254 (79%)]	Loss: 6391.575684
+====> Epoch: 32 Average loss: 6366.0255
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6589.8203
+save image: results/sample_32.png
+Train Epoch: 33 [0/254 (0%)]	Loss: 5853.615234
+Train Epoch: 33 [200/254 (79%)]	Loss: 5929.038574
+====> Epoch: 33 Average loss: 6362.7585
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6577.9955
+save image: results/sample_33.png
+Train Epoch: 34 [0/254 (0%)]	Loss: 6942.001953
+Train Epoch: 34 [200/254 (79%)]	Loss: 6325.667969
+====> Epoch: 34 Average loss: 6351.9432
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6596.8887
+save image: results/sample_34.png
+Train Epoch: 35 [0/254 (0%)]	Loss: 5849.147949
+Train Epoch: 35 [200/254 (79%)]	Loss: 6482.330566
+====> Epoch: 35 Average loss: 6358.6193
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6587.0280
+save image: results/sample_35.png
+Train Epoch: 36 [0/254 (0%)]	Loss: 6288.159180
+Train Epoch: 36 [200/254 (79%)]	Loss: 6616.563477
+====> Epoch: 36 Average loss: 6346.2189
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6612.6518
+save image: results/sample_36.png
+Train Epoch: 37 [0/254 (0%)]	Loss: 5532.444824
+Train Epoch: 37 [200/254 (79%)]	Loss: 6286.193848
+====> Epoch: 37 Average loss: 6332.9484
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6591.4250
+save image: results/sample_37.png
+Train Epoch: 38 [0/254 (0%)]	Loss: 6291.027832
+Train Epoch: 38 [200/254 (79%)]	Loss: 6094.847168
+====> Epoch: 38 Average loss: 6329.1396
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6581.7843
+save image: results/sample_38.png
+Train Epoch: 39 [0/254 (0%)]	Loss: 6620.667969
+Train Epoch: 39 [200/254 (79%)]	Loss: 5907.264160
+====> Epoch: 39 Average loss: 6325.2753
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6578.6753
+save image: results/sample_39.png
+Train Epoch: 40 [0/254 (0%)]	Loss: 6364.588379
+Train Epoch: 40 [200/254 (79%)]	Loss: 6382.209961
+====> Epoch: 40 Average loss: 6315.1110
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6587.7265
+save image: results/sample_40.png
+Train Epoch: 41 [0/254 (0%)]	Loss: 6177.187988
+Train Epoch: 41 [200/254 (79%)]	Loss: 6251.603516
+====> Epoch: 41 Average loss: 6318.1848
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6578.7224
+save image: results/sample_41.png
+Train Epoch: 42 [0/254 (0%)]	Loss: 5655.331543
+Train Epoch: 42 [200/254 (79%)]	Loss: 6056.572266
+====> Epoch: 42 Average loss: 6308.5922
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6599.6077
+save image: results/sample_42.png
+Train Epoch: 43 [0/254 (0%)]	Loss: 6119.952637
+Train Epoch: 43 [200/254 (79%)]	Loss: 6976.215820
+====> Epoch: 43 Average loss: 6301.7483
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6583.2401
+save image: results/sample_43.png
+Train Epoch: 44 [0/254 (0%)]	Loss: 5851.778320
+Train Epoch: 44 [200/254 (79%)]	Loss: 5847.001465
+====> Epoch: 44 Average loss: 6303.0639
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6623.2893
+save image: results/sample_44.png
+Train Epoch: 45 [0/254 (0%)]	Loss: 5910.550293
+Train Epoch: 45 [200/254 (79%)]	Loss: 6516.945801
+====> Epoch: 45 Average loss: 6299.4526
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6581.5611
+save image: results/sample_45.png
+Train Epoch: 46 [0/254 (0%)]	Loss: 6531.888184
+Train Epoch: 46 [200/254 (79%)]	Loss: 6267.691406
+====> Epoch: 46 Average loss: 6293.8682
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6598.3869
+save image: results/sample_46.png
+Train Epoch: 47 [0/254 (0%)]	Loss: 6354.311523
+Train Epoch: 47 [200/254 (79%)]	Loss: 6642.291016
+====> Epoch: 47 Average loss: 6287.8312
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6608.2649
+save image: results/sample_47.png
+Train Epoch: 48 [0/254 (0%)]	Loss: 5727.072754
+Train Epoch: 48 [200/254 (79%)]	Loss: 6080.286621
+====> Epoch: 48 Average loss: 6284.5325
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6599.3642
+save image: results/sample_48.png
+Train Epoch: 49 [0/254 (0%)]	Loss: 6113.304199
+Train Epoch: 49 [200/254 (79%)]	Loss: 6356.833496
+====> Epoch: 49 Average loss: 6280.4854
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6599.4883
+save image: results/sample_49.png
+Train Epoch: 50 [0/254 (0%)]	Loss: 7015.062988
+Train Epoch: 50 [200/254 (79%)]	Loss: 5793.778320
+====> Epoch: 50 Average loss: 6276.3983
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6587.5863
+save image: results/sample_50.png
+Train Epoch: 51 [0/254 (0%)]	Loss: 6322.519531
+Train Epoch: 51 [200/254 (79%)]	Loss: 6537.291016
+====> Epoch: 51 Average loss: 6271.2768
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6584.9218
+save image: results/sample_51.png
+Train Epoch: 52 [0/254 (0%)]	Loss: 6817.479492
+Train Epoch: 52 [200/254 (79%)]	Loss: 6915.791016
+====> Epoch: 52 Average loss: 6270.3799
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6586.6250
+save image: results/sample_52.png
+Train Epoch: 53 [0/254 (0%)]	Loss: 7049.179688
+Train Epoch: 53 [200/254 (79%)]	Loss: 6984.083984
+====> Epoch: 53 Average loss: 6264.2326
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6584.3441
+save image: results/sample_53.png
+Train Epoch: 54 [0/254 (0%)]	Loss: 6353.552734
+Train Epoch: 54 [200/254 (79%)]	Loss: 5870.260254
+====> Epoch: 54 Average loss: 6262.0854
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6611.7766
+save image: results/sample_54.png
+Train Epoch: 55 [0/254 (0%)]	Loss: 5883.083496
+Train Epoch: 55 [200/254 (79%)]	Loss: 5975.749023
+====> Epoch: 55 Average loss: 6262.7252
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6587.0416
+save image: results/sample_55.png
+Train Epoch: 56 [0/254 (0%)]	Loss: 5710.724609
+Train Epoch: 56 [200/254 (79%)]	Loss: 5548.219238
+====> Epoch: 56 Average loss: 6259.2257
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6579.6384
+save image: results/sample_56.png
+Train Epoch: 57 [0/254 (0%)]	Loss: 6244.228516
+Train Epoch: 57 [200/254 (79%)]	Loss: 6387.700195
+====> Epoch: 57 Average loss: 6255.1282
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6588.5062
+save image: results/sample_57.png
+Train Epoch: 58 [0/254 (0%)]	Loss: 6304.833496
+Train Epoch: 58 [200/254 (79%)]	Loss: 6311.705566
+====> Epoch: 58 Average loss: 6250.1297
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6587.9840
+save image: results/sample_58.png
+Train Epoch: 59 [0/254 (0%)]	Loss: 6063.462402
+Train Epoch: 59 [200/254 (79%)]	Loss: 6555.035156
+====> Epoch: 59 Average loss: 6247.9742
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6590.9034
+save image: results/sample_59.png
+Train Epoch: 60 [0/254 (0%)]	Loss: 6721.695312
+Train Epoch: 60 [200/254 (79%)]	Loss: 5982.865234
+====> Epoch: 60 Average loss: 6248.7863
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6598.0436
+save image: results/sample_60.png
+Train Epoch: 61 [0/254 (0%)]	Loss: 6610.907227
+Train Epoch: 61 [200/254 (79%)]	Loss: 6797.337402
+====> Epoch: 61 Average loss: 6240.3619
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6586.9213
+save image: results/sample_61.png
+Train Epoch: 62 [0/254 (0%)]	Loss: 5743.985352
+Train Epoch: 62 [200/254 (79%)]	Loss: 6377.017090
+====> Epoch: 62 Average loss: 6244.6354
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6592.8199
+save image: results/sample_62.png
+Train Epoch: 63 [0/254 (0%)]	Loss: 6594.629883
+Train Epoch: 63 [200/254 (79%)]	Loss: 6859.348633
+====> Epoch: 63 Average loss: 6239.4488
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6594.4821
+save image: results/sample_63.png
+Train Epoch: 64 [0/254 (0%)]	Loss: 6689.041016
+Train Epoch: 64 [200/254 (79%)]	Loss: 6546.035645
+====> Epoch: 64 Average loss: 6234.1130
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6590.6317
+save image: results/sample_64.png
+Train Epoch: 65 [0/254 (0%)]	Loss: 6259.154785
+Train Epoch: 65 [200/254 (79%)]	Loss: 6037.273926
+====> Epoch: 65 Average loss: 6230.1970
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6594.7927
+save image: results/sample_65.png
+Train Epoch: 66 [0/254 (0%)]	Loss: 5742.948242
+Train Epoch: 66 [200/254 (79%)]	Loss: 6054.439941
+====> Epoch: 66 Average loss: 6231.8960
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6598.2498
+save image: results/sample_66.png
+Train Epoch: 67 [0/254 (0%)]	Loss: 6536.492676
+Train Epoch: 67 [200/254 (79%)]	Loss: 6155.924805
+====> Epoch: 67 Average loss: 6234.5828
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6602.1819
+save image: results/sample_67.png
+Train Epoch: 68 [0/254 (0%)]	Loss: 5575.541504
+Train Epoch: 68 [200/254 (79%)]	Loss: 5965.460449
+====> Epoch: 68 Average loss: 6229.9125
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6592.3147
+save image: results/sample_68.png
+Train Epoch: 69 [0/254 (0%)]	Loss: 6316.574707
+Train Epoch: 69 [200/254 (79%)]	Loss: 6028.292969
+====> Epoch: 69 Average loss: 6223.1426
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6591.9849
+save image: results/sample_69.png
+Train Epoch: 70 [0/254 (0%)]	Loss: 6392.081543
+Train Epoch: 70 [200/254 (79%)]	Loss: 6464.685059
+====> Epoch: 70 Average loss: 6225.4784
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6601.3131
+save image: results/sample_70.png
+Train Epoch: 71 [0/254 (0%)]	Loss: 6603.034668
+Train Epoch: 71 [200/254 (79%)]	Loss: 6036.138672
+====> Epoch: 71 Average loss: 6221.0854
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6596.1585
+save image: results/sample_71.png
+Train Epoch: 72 [0/254 (0%)]	Loss: 6268.102051
+Train Epoch: 72 [200/254 (79%)]	Loss: 6359.783203
+====> Epoch: 72 Average loss: 6219.0430
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6591.3058
+save image: results/sample_72.png
+Train Epoch: 73 [0/254 (0%)]	Loss: 6670.198730
+Train Epoch: 73 [200/254 (79%)]	Loss: 5946.853516
+====> Epoch: 73 Average loss: 6220.7584
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6593.7918
+save image: results/sample_73.png
+Train Epoch: 74 [0/254 (0%)]	Loss: 6050.890625
+Train Epoch: 74 [200/254 (79%)]	Loss: 5653.652832
+====> Epoch: 74 Average loss: 6216.9748
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6592.6436
+save image: results/sample_74.png
+Train Epoch: 75 [0/254 (0%)]	Loss: 5782.514648
+Train Epoch: 75 [200/254 (79%)]	Loss: 5792.493164
+====> Epoch: 75 Average loss: 6215.3063
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6593.6781
+save image: results/sample_75.png
+Train Epoch: 76 [0/254 (0%)]	Loss: 6177.582520
+Train Epoch: 76 [200/254 (79%)]	Loss: 6644.821289
+====> Epoch: 76 Average loss: 6211.2187
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6584.7314
+save image: results/sample_76.png
+Train Epoch: 77 [0/254 (0%)]	Loss: 5845.772949
+Train Epoch: 77 [200/254 (79%)]	Loss: 6241.034668
+====> Epoch: 77 Average loss: 6213.2895
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6600.5995
+save image: results/sample_77.png
+Train Epoch: 78 [0/254 (0%)]	Loss: 6238.837891
+Train Epoch: 78 [200/254 (79%)]	Loss: 6416.264648
+====> Epoch: 78 Average loss: 6212.0481
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6597.6074
+save image: results/sample_78.png
+Train Epoch: 79 [0/254 (0%)]	Loss: 6735.644043
+Train Epoch: 79 [200/254 (79%)]	Loss: 6386.788574
+====> Epoch: 79 Average loss: 6209.4535
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6590.7553
+save image: results/sample_79.png
+Train Epoch: 80 [0/254 (0%)]	Loss: 6151.573242
+Train Epoch: 80 [200/254 (79%)]	Loss: 6313.366211
+====> Epoch: 80 Average loss: 6207.3539
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6598.7703
+save image: results/sample_80.png
+Train Epoch: 81 [0/254 (0%)]	Loss: 5810.243652
+Train Epoch: 81 [200/254 (79%)]	Loss: 5698.035156
+====> Epoch: 81 Average loss: 6206.8655
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6602.5488
+save image: results/sample_81.png
+Train Epoch: 82 [0/254 (0%)]	Loss: 6976.883301
+Train Epoch: 82 [200/254 (79%)]	Loss: 5984.043945
+====> Epoch: 82 Average loss: 6207.6030
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6601.7001
+save image: results/sample_82.png
+Train Epoch: 83 [0/254 (0%)]	Loss: 6640.882324
+Train Epoch: 83 [200/254 (79%)]	Loss: 5824.843750
+====> Epoch: 83 Average loss: 6207.4582
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6599.3047
+save image: results/sample_83.png
+Train Epoch: 84 [0/254 (0%)]	Loss: 5811.830566
+Train Epoch: 84 [200/254 (79%)]	Loss: 6196.360352
+====> Epoch: 84 Average loss: 6199.7131
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6601.1099
+save image: results/sample_84.png
+Train Epoch: 85 [0/254 (0%)]	Loss: 6374.593262
+Train Epoch: 85 [200/254 (79%)]	Loss: 6498.685547
+====> Epoch: 85 Average loss: 6199.2997
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6625.1735
+save image: results/sample_85.png
+Train Epoch: 86 [0/254 (0%)]	Loss: 6348.506836
+Train Epoch: 86 [200/254 (79%)]	Loss: 6630.173828
+====> Epoch: 86 Average loss: 6203.0925
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6608.5690
+save image: results/sample_86.png
+Train Epoch: 87 [0/254 (0%)]	Loss: 7014.020020
+Train Epoch: 87 [200/254 (79%)]	Loss: 6787.306641
+====> Epoch: 87 Average loss: 6199.6382
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6613.2096
+save image: results/sample_87.png
+Train Epoch: 88 [0/254 (0%)]	Loss: 6842.529785
+Train Epoch: 88 [200/254 (79%)]	Loss: 5973.984863
+====> Epoch: 88 Average loss: 6195.2962
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6610.3611
+save image: results/sample_88.png
+Train Epoch: 89 [0/254 (0%)]	Loss: 5681.100098
+Train Epoch: 89 [200/254 (79%)]	Loss: 5756.108398
+====> Epoch: 89 Average loss: 6197.1142
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6601.8984
+save image: results/sample_89.png
+Train Epoch: 90 [0/254 (0%)]	Loss: 6448.219727
+Train Epoch: 90 [200/254 (79%)]	Loss: 6643.690430
+====> Epoch: 90 Average loss: 6198.6467
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6597.8059
+save image: results/sample_90.png
+Train Epoch: 91 [0/254 (0%)]	Loss: 5861.654297
+Train Epoch: 91 [200/254 (79%)]	Loss: 6089.486328
+====> Epoch: 91 Average loss: 6192.3686
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6603.9297
+save image: results/sample_91.png
+Train Epoch: 92 [0/254 (0%)]	Loss: 6474.327148
+Train Epoch: 92 [200/254 (79%)]	Loss: 6305.334473
+====> Epoch: 92 Average loss: 6195.8738
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6604.5380
+save image: results/sample_92.png
+Train Epoch: 93 [0/254 (0%)]	Loss: 5900.507324
+Train Epoch: 93 [200/254 (79%)]	Loss: 6162.630859
+====> Epoch: 93 Average loss: 6192.1918
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6592.5170
+save image: results/sample_93.png
+Train Epoch: 94 [0/254 (0%)]	Loss: 5781.745605
+Train Epoch: 94 [200/254 (79%)]	Loss: 6451.067383
+====> Epoch: 94 Average loss: 6187.1244
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6602.2212
+save image: results/sample_94.png
+Train Epoch: 95 [0/254 (0%)]	Loss: 6011.004395
+Train Epoch: 95 [200/254 (79%)]	Loss: 6032.234863
+====> Epoch: 95 Average loss: 6187.2799
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6591.0980
+save image: results/sample_95.png
+Train Epoch: 96 [0/254 (0%)]	Loss: 6233.736816
+Train Epoch: 96 [200/254 (79%)]	Loss: 5974.611328
+====> Epoch: 96 Average loss: 6185.4158
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6599.4354
+save image: results/sample_96.png
+Train Epoch: 97 [0/254 (0%)]	Loss: 5215.419434
+Train Epoch: 97 [200/254 (79%)]	Loss: 7243.865723
+====> Epoch: 97 Average loss: 6182.8429
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6595.9925
+save image: results/sample_97.png
+Train Epoch: 98 [0/254 (0%)]	Loss: 5960.945801
+Train Epoch: 98 [200/254 (79%)]	Loss: 6192.839355
+====> Epoch: 98 Average loss: 6187.2287
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6607.8436
+save image: results/sample_98.png
+Train Epoch: 99 [0/254 (0%)]	Loss: 5782.969238
+Train Epoch: 99 [200/254 (79%)]	Loss: 6740.248535
+====> Epoch: 99 Average loss: 6189.3614
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6604.7475
+save image: results/sample_99.png
+Train Epoch: 100 [0/254 (0%)]	Loss: 6129.281250
+Train Epoch: 100 [200/254 (79%)]	Loss: 6751.202148
+====> Epoch: 100 Average loss: 6188.0883
+torch.Size([4, 3, 64, 64])
+====> Test set loss: 6602.5453
+save image: results/sample_100.png

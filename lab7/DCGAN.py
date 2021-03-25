@@ -19,6 +19,7 @@ data = cifar_data()
 batch_size = 100
 data_loader = torch.utils.data.DataLoader(data, batch_size=batch_size, shuffle=True)
 num_batches = len(data_loader)
+# 58368 = 64 * 912
 
 
 class DiscriminativeNet(torch.nn.Module):
