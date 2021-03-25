@@ -22,7 +22,7 @@ device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
 print(device)
 
 out_dir = '../torch_data/DCGAN/celeb/' #you can use old downloaded dataset, I use from VGAN
-batch_size=2
+batch_size=8
 
 compose = transforms.Compose(
         [
@@ -65,7 +65,7 @@ def train(epoch):
         # print("---- b")
         recon_batch, mu, logvar = model(data)
         # print("---- c")
-        loss = loss_function(recon_batch, data, mu, logvar)
+        loss = loss_function(recon_batch.view(-1, 3, 64,64), data, mu, logvar)
         # print("---- d")
         loss.backward()
         train_loss += loss.item()
@@ -88,11 +88,10 @@ def test(epoch):
         for i, (data, _) in enumerate(test_loader):
             data = data.to(device)
             recon_batch, mu, logvar = model(data)
-            test_loss += loss_function(recon_batch, data, mu, logvar).item()
+            test_loss += loss_function(recon_batch.view(-1, 3, 64,64), data, mu, logvar).item()
             if i == 0:
                 n = min(data.size(0), 8)
-                comparison = torch.cat([data[:n],
-                                      recon_batch.view(batch_size, 3, 64, 64)[:n]])
+                comparison = torch.cat([data[:n], recon_batch.view(batch_size, 3, 64,64)[:n]])
                 save_image(comparison.cpu(),
                          'results/reconstruction_' + str(epoch) + '.png', nrow=n)
                 print(comparison.shape)
@@ -100,7 +99,7 @@ def test(epoch):
     test_loss /= len(test_loader.dataset)
     print('====> Test set loss: {:.4f}'.format(test_loss))
     plotter.plot('loss', 'test', 'Loss over epoch', x=epoch, y=test_loss)
-    plotter.viz.images(comparison.cpu(), win='test')
+    plotter.viz.images(comparison.cpu(), win='reconstrction')
 
 print("to_device")
 model = VAEConv().to(device)
@@ -114,7 +113,8 @@ for epoch in range(1, epochs + 1):
     train(epoch)
     test(epoch)
     with torch.no_grad():
-        sample = torch.randn(64, 100).to(device)
+        sample = torch.randn(64, 20).to(device)
         sample = model.decode(sample).cpu()
         print("save image: " + 'results/sample_' + str(epoch) + '.png')
-        save_image(sample.view(-1, 3, 64, 64), 'results/sample_' + str(epoch) + '.png')
+        save_image(sample.view(-1, 3, 64,64), 'results/sample_' + str(epoch) + '.png')
+        plotter.viz.images(sample.view(-1, 3, 64,64), win='sample')
