@@ -183,6 +183,8 @@ lab9/result*/*
 !lab9/results_adam_l001_b10000/reconstruction_500.png
 !lab9/results_adam_l001_b10000/sample_500.png
 
+lab10/.nfs*
+lab10/screenshots/.nfs*
 
 torch_data/*
 lab11/content/*
