@@ -1,4 +1,4 @@
-FROM nvidia/cuda:10.0-base
+FROM nvidia/cuda:11.0-base
 
 ENV http_proxy http://192.41.170.23:3128
 ENV https_proxy http://192.41.170.23:3128
@@ -19,9 +19,9 @@ ENV LC_ALL en_US.UTF-8
 
 RUN apt-get install -y python3-pip git
 RUN pip3 install wheel
-RUN pip3 install numpy torch==1.2.0 torchvision==0.4.0 torchtext==0.4 torchaudio==0.3 tensorboard==1.14 future
+RUN pip3 install numpy torch torchvision torchtext torchaudio tensorboard future
 RUN pip3 install cython==0.28.5
-RUN pip3 install scipy==0.19.1
+RUN pip3 install scipy
 RUN pip3 install sklearn
 RUN pip3 install pandas seaborn
 RUN apt-get install -y pandoc
