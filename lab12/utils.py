@@ -1,3 +1,4 @@
+import pickle
 import torch
 
 def data_process(raw_text_iter, vocab, tokenizer):
@@ -15,3 +16,15 @@ def batchify(data, bsz):
     data = data.view(bsz, -1).t().contiguous()
     return data
 
+def save_vocab(vocab, path):
+    import pickle
+    output = open(path, 'wb')
+    pickle.dump(vocab, output)
+    output.close()
+
+def load_vocab(path):
+  import pickle
+  output = open(path, 'rb')
+  vocab = pickle.load(output)
+  output.close()
+  return vocab

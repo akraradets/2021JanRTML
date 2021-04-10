@@ -35,6 +35,7 @@ train_iter, val_iter, test_iter = WikiText2(root="../torch_data")
 train_data = data_process(train_iter, vocab, tokenizer)
 val_data = data_process(val_iter, vocab, tokenizer)
 test_data = data_process(test_iter, vocab, tokenizer)
+save_vocab(vocab, 'checkpoint/transformer_vocab.pickle')
 
 device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
 
