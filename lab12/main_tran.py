@@ -5,6 +5,7 @@ from torchtext.datasets import WikiText2
 from torchtext.data.utils import get_tokenizer
 from collections import Counter
 from torchtext.vocab import Vocab
+import math
 from utils import *
 from myTransformer import *
 
@@ -50,7 +51,7 @@ nlayers = 2 # the number of nn.TransformerEncoderLayer in nn.TransformerEncoder
 nhead = 2 # the number of heads in the multiheadattention models
 dropout = 0.2 # the dropout value
 model = TransformerModel(ntokens, emsize, nhead, nhid, nlayers, dropout).to(device)
-
+# torch.save(model.state_dict(), 'checkpoint/')
 criterion = nn.CrossEntropyLoss()
 lr = 5.0 # learning rate
 optimizer = torch.optim.SGD(model.parameters(), lr=lr)
@@ -128,14 +129,14 @@ for epoch in range(1, epochs + 1):
     if val_loss < best_val_loss:
         best_val_loss = val_loss
         best_model = model
+        torch.save(best_model.state_dict(), 'checkpoint/transformer.pth')
 
     scheduler.step()
 
 test_loss = evaluate(best_model, test_data)
 experiment.log_metric('test_loss', test_loss)
 print('=' * 89)
-print('| End of training | test loss {:5.2f} | test ppl {:8.2f}'.format(
-    test_loss, math.exp(test_loss)))
+print('| End of training | test loss {:5.2f} | test ppl {:8.2f}'.format(test_loss, math.exp(test_loss)))
 print('=' * 89)
 
 experiment.end()

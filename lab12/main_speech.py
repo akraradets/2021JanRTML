@@ -125,6 +125,7 @@ def test(model, device, test_loader, criterion, epoch, iter_meter, experiment):
     experiment.log_metric('wer', avg_wer, step=iter_meter.get())
 
     print('Test set: Average loss: {:.4f}, Average CER: {:4f} Average WER: {:.4f}\n'.format(test_loss, avg_cer, avg_wer))
+    return test_loss
 
 
 learning_rate=5e-4
@@ -149,7 +150,7 @@ hparams = {
 # experiment.log_parameters(hparams)
 
 use_cuda = torch.cuda.is_available()
-device = torch.device("cuda:1" if use_cuda else "cpu")
+device = torch.device("cuda:0" if use_cuda else "cpu")
 
 kwargs = {'num_workers': 1, 'pin_memory': True} if use_cuda else {}
 train_loader = data.DataLoader(dataset=train_dataset,
@@ -194,8 +195,14 @@ def GreedyDecoder(output, labels, label_lengths, blank_label=28, collapse_repeat
     return decodes, targets
 
 iter_meter = IterMeter()
+loss = 0
+best_loss = None
 for epoch in range(1, epochs + 1):
     train(model, device, train_loader, criterion, optimizer, scheduler, epoch, iter_meter, experiment)
-    test(model, device, test_loader, criterion, epoch, iter_meter, experiment)
+    loss = test(model, device, test_loader, criterion, epoch, iter_meter, experiment)
+    if best_loss < loss:
+        best_val_loss = loss
+        best_model = model
+        torch.save(best_model.state_dict(), 'checkpoint/deepspeech.pth')
 
 experiment.end()
