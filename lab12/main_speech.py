@@ -83,7 +83,7 @@ def train(model, device, train_loader, criterion, optimizer, scheduler, epoch, i
             loss.backward()
 
             experiment.log_metric('loss', loss.item(), step=iter_meter.get())
-            experiment.log_metric('learning_rate', scheduler.get_lr(), step=iter_meter.get())
+            experiment.log_metric('learning_rate', scheduler.get_last_lr(), step=iter_meter.get())
 
             optimizer.step()
             scheduler.step()
@@ -150,7 +150,7 @@ hparams = {
 # experiment.log_parameters(hparams)
 
 use_cuda = torch.cuda.is_available()
-device = torch.device("cuda:0" if use_cuda else "cpu")
+device = torch.device("cuda:1" if use_cuda else "cpu")
 
 kwargs = {'num_workers': 1, 'pin_memory': True} if use_cuda else {}
 train_loader = data.DataLoader(dataset=train_dataset,
@@ -200,8 +200,8 @@ best_loss = None
 for epoch in range(1, epochs + 1):
     train(model, device, train_loader, criterion, optimizer, scheduler, epoch, iter_meter, experiment)
     loss = test(model, device, test_loader, criterion, epoch, iter_meter, experiment)
-    if best_loss < loss:
-        best_val_loss = loss
+    if best_loss == None or best_loss < loss:
+        best_loss = loss
         best_model = model
         torch.save(best_model.state_dict(), 'checkpoint/deepspeech.pth')
 

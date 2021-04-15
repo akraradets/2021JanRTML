@@ -189,4 +189,4 @@ lab10/screenshots/.nfs*
 torch_data/*
 lab11/content/*
 lab11/content_nps/*
-lab12/checkpoint/transformer.pth
+lab12/checkpoint/*.pth
