@@ -1,0 +1,33 @@
+import importlib
+
+game_name = 'tictactoe'
+game_module = importlib.import_module("games." + game_name)
+env = game_module.Game()
+
+env.reset()
+
+next_state, reward, done = env.step(4)
+env.render()
+print()
+print(next_state, 'reward', reward, 'is_done:', done)
+print("======")
+next_state, reward, done = env.step(5)
+env.render()
+print()
+print(next_state, 'reward', reward, 'is_done:', done)
+print("======")
+next_state, reward, done = env.step(1)
+env.render()
+print()
+print(next_state, 'reward', reward, 'is_done:', done)
+print("======")
+next_state, reward, done = env.step(6)
+env.render()
+print()
+print(next_state, 'reward', reward, 'is_done:', done)
+print("======")
+next_state, reward, done = env.step(7)
+env.render()
+print()
+print(next_state, 'reward', reward, 'is_done:', done)
+print("======")
