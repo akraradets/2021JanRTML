@@ -163,16 +163,12 @@ class Game(AbstractGame):
         """
         while True:
             try:
-                row = int(
-                    input(
-                        f"Enter the row (1, 2 or 3) to play for the player {self.to_play()}: "
-                    )
-                )
-                col = int(
-                    input(
-                        f"Enter the column (1, 2 or 3) to play for the player {self.to_play()}: "
-                    )
-                )
+                row = input(f"Enter the row (1, 2 or 3) to play for the player {self.to_play()}: ")
+                if(row == 'q'): return 'q'
+                col = input(f"Enter the column (1, 2 or 3) to play for the player {self.to_play()}: ")
+                if(col == 'q'): return 'q'
+                row = int(row)
+                col = int(col)
                 choice = (row - 1) * 3 + (col - 1)
                 if (
                     choice in self.legal_actions()
