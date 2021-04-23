@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import gym
 import numpy as np
 from tqdm import trange
-from myDQN import DQN, ReplayBuffer, CNNDQN
+from myDQN import DQN, ReplayBuffer, CNNDQN,DDQN
 
 import time
 def play_game(model):
@@ -106,9 +106,9 @@ eps_by_episode = gen_eps_by_episode(epsilon_start, epsilon_final, epsilon_decay)
 env_id = 'SpaceInvaders-v0'
 env = gym.make(env_id)
 
-model = CNNDQN(3, env.action_space.n).to(device)
+model = DDQN(3, env.action_space.n).to(device)
     
-model.load_state_dict(torch.load('checkpoints/spaceInvaders-doubledqn.pth', map_location=torch.device('cpu') ),)
+model.load_state_dict(torch.load('checkpoints/spaceInvaders-ddqn.pth', map_location=torch.device('cpu') ),)
 model.eval()
 
 # replay_buffer = ReplayBuffer(1000)

@@ -33,6 +33,7 @@ def gen_eps_by_episode(epsilon_start, epsilon_final, epsilon_decay):
     return eps_by_episode
 
 episodes = 200000
+episodes = 5000000
 batch_size = 64
 gamma      = 0.99
 min_play_reward = -.15
@@ -191,4 +192,4 @@ def train_DDQN_prior_exp_replay(env, current_model, target_model, eps_by_episode
     return current_model, target_model, all_rewards, losses
 
 current_model, target_model, all_rewards, losses = train_DDQN_prior_exp_replay(env, current_model, target_model, eps_by_episode, optimizer, replay_buffer, beta_by_episode, episodes = episodes, batch_size=batch_size, gamma = gamma, min_play_reward = min_play_reward)
-torch.save(current_model.state_dict(), 'checkpoints/spaceInvaders-hw-phi.pth')
+torch.save(current_model.state_dict(), 'checkpoints/spaceInvaders-hw-phi-5M.pth')
