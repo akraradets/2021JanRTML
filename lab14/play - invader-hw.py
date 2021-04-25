@@ -87,15 +87,16 @@ def play_game_CNN(model):
     done = False
     obs = env.reset()
     state = get_state3(obs)
+    round_reward = 0
     while(not done):
         action = model.act(state, epsilon_final,env,device)
         next_obs, reward, done, _ = env.step(action)
+        round_reward += reward
         next_state = get_state3(next_obs)
         env.render()
         time.sleep(0.1)
         state = next_state
-    
-    return reward
+    return round_reward
 
 reward_list = []
 
