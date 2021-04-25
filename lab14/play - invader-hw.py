@@ -10,21 +10,6 @@ import numpy as np
 from tqdm import trange
 from myDQN import DQN, ReplayBuffer, CNNDQN,DDQN
 
-import time
-
-def play_game_CNN(model):
-    done = False
-    obs = env.reset()
-    state = get_state3(obs)
-    while(not done):
-        action = model.act(state, epsilon_final,env,device)
-        next_obs, reward, done, _ = env.step(action)
-        next_state = get_state3(next_obs)
-        env.render()
-        time.sleep(0.1)
-        state = next_state
-
-
 import torchvision.transforms as T
 from PIL import Image
 
@@ -96,6 +81,29 @@ model.eval()
 
 # replay_buffer = ReplayBuffer(1000)
 
-play_game_CNN(model)
-time.sleep(3)
+import time
+
+def play_game_CNN(model):
+    done = False
+    obs = env.reset()
+    state = get_state3(obs)
+    while(not done):
+        action = model.act(state, epsilon_final,env,device)
+        next_obs, reward, done, _ = env.step(action)
+        next_state = get_state3(next_obs)
+        env.render()
+        time.sleep(0.1)
+        state = next_state
+    
+    return reward
+
+reward_list = []
+
+for i in range(100):
+    reward = play_game_CNN(model)
+    print(f"round {i}: {reward}")
+    reward_list.append(reward)
+# time.sleep(3)
 env.close()
+
+print("Reward:", sum(reward_list)/len(reward_list))
