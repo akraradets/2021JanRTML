@@ -91,7 +91,7 @@ env = gym.make(env_id)
 
 model = DDQN(3, env.action_space.n).to(device)
     
-model.load_state_dict(torch.load('checkpoints/spaceInvaders-hw-phi.pth', map_location=torch.device('cpu') ),)
+model.load_state_dict(torch.load('checkpoints/spaceInvaders-hw-phi-50M.pth', map_location=torch.device('cpu') ),)
 model.eval()
 
 # replay_buffer = ReplayBuffer(1000)
