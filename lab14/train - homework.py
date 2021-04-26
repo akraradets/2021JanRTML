@@ -32,8 +32,8 @@ def gen_eps_by_episode(epsilon_start, epsilon_final, epsilon_decay):
     eps_by_episode = lambda episode: epsilon_final + (epsilon_start - epsilon_final) * math.exp(-1. * episode / epsilon_decay)
     return eps_by_episode
 
-episodes = 200000
-episodes = 5000000
+# episodes = 200000
+episodes = 1000000
 batch_size = 64
 gamma      = 0.99
 min_play_reward = -.15
@@ -59,8 +59,8 @@ def update_target(current_model, target_model):
 env_id = 'SpaceInvaders-v0'
 env = gym.make(env_id)
 
-current_model = DDQN(3, env.action_space.n).to(device)
-target_model  = DDQN(3, env.action_space.n).to(device)
+current_model = DDQN(4, env.action_space.n).to(device)
+target_model  = DDQN(4, env.action_space.n).to(device)
 
 optimizer = optim.Adam(current_model.parameters())
 
@@ -83,7 +83,7 @@ def get_state3(observation):
     
     # First time, repeat the state for 3 times
     if(state_buffer.qsize() == 0):
-        for i in range(3):
+        for i in range(4):
             state = get_state2(observation)
             state_buffer.put(state)
         # print(observation.shape, state.shape)
@@ -163,7 +163,11 @@ def train_DDQN_prior_exp_replay(env, current_model, target_model, eps_by_episode
         action = current_model.act(state, epsilon, env, device)
         
         # input action into state
-        next_obs, reward, done, _ = env.step(action)
+        reward = 0
+        for i in range(3):
+            next_obs, i_reward, done, _ = env.step(action)
+            reward += i_reward
+            if(done): break
         next_state = get_state3(next_obs)
         # save data into buffer
         replay_buffer.push(state, action, reward, next_state, done)
@@ -192,5 +196,5 @@ def train_DDQN_prior_exp_replay(env, current_model, target_model, eps_by_episode
     return current_model, target_model, all_rewards, losses
 
 current_model, target_model, all_rewards, losses = train_DDQN_prior_exp_replay(env, current_model, target_model, eps_by_episode, optimizer, replay_buffer, beta_by_episode, episodes = episodes, batch_size=batch_size, gamma = gamma, min_play_reward = min_play_reward)
-torch.save(current_model.state_dict(), 'checkpoints/spaceInvaders-hw-phi-50M.pth')
-torch.save(target_model.state_dict(), 'checkpoints/spaceInvaders-target-hw-phi-50M.pth')
+torch.save(current_model.state_dict(), 'checkpoints/spaceInvaders-hw-phi-skip-1M.pth')
+torch.save(target_model.state_dict(), 'checkpoints/spaceInvaders-target-hw-phi-skip-1M.pth')
