@@ -26,7 +26,7 @@ def get_state3(observation):
     
     # First time, repeat the state for 3 times
     if(state_buffer.qsize() == 0):
-        for i in range(3):
+        for i in range(4):
             state = get_state2(observation)
             state_buffer.put(state)
         # print(observation.shape, state.shape)
@@ -74,9 +74,9 @@ eps_by_episode = gen_eps_by_episode(epsilon_start, epsilon_final, epsilon_decay)
 env_id = 'SpaceInvaders-v0'
 env = gym.make(env_id)
 
-model = DDQN(3, env.action_space.n).to(device)
+model = DDQN(4, env.action_space.n).to(device)
     
-model.load_state_dict(torch.load('checkpoints/spaceInvaders-hw-phi-50M.pth', map_location=torch.device('cpu') ),)
+model.load_state_dict(torch.load('checkpoints/spaceInvaders-hw-phi-skip-1M.pth', map_location=torch.device('cpu') ),)
 model.eval()
 
 # replay_buffer = ReplayBuffer(1000)
@@ -90,7 +90,12 @@ def play_game_CNN(model):
     round_reward = 0
     while(not done):
         action = model.act(state, epsilon_final,env,device)
-        next_obs, reward, done, _ = env.step(action)
+        reward = 0
+        for i in range(3):
+            next_obs, i_reward, done, _ = env.step(action)
+            # next_obs, reward, done, _ = env.step(action)
+            reward += i_reward
+            if(done): break
         round_reward += reward
         next_state = get_state3(next_obs)
         env.render()
