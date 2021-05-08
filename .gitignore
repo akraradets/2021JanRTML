@@ -190,3 +190,4 @@ torch_data/*
 lab11/content/*
 lab11/content_nps/*
 lab12/checkpoint/*.pth
+lab14/train_homework_1M.out
